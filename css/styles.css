@@ -1,0 +1,208 @@
+:root {
+    --main-font: font-family: 'Open Sans',
+    sans-serif;
+    --headline-font: font-family: 'Raleway',
+    sans-serif;
+    --brand-color: #FF6C00;
+    --dark-theme-color: #9DA4BD;
+    --white-theme-color: #555555;
+    --bold-color: #303030;
+}
+
+body {
+    font-family: var(--main-font);
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* ======= COMPONENTS ======= */
+
+.button {
+    width: 164px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.333;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid var(--brand-color);
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.button:hover,
+.button:focus {
+    color: #FFFFFF;
+    background-color: var(--brand-color);
+}
+
+.subtitle {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.364;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.667;
+    letter-spacing: 0.02em;
+}
+
+.secondary-title {
+    font-family: var(--headline-font);
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.167;
+    letter-spacing: 0.05em;
+}
+
+.see-through {
+    color: #9DA4BD99;
+}
+
+.light-theme {
+    color: var(--bold-color);
+}
+
+.dark-theme {
+    color: var(--dark-theme-color);
+}
+
+.white-theme {
+    color: var(--white-theme-color);
+}
+
+.white {
+    color: #FFFFFF;
+}
+
+/* ======= END COMPONENTS ======= */
+
+
+/* ======= HEADER ======= */
+
+.navigation-link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.333;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    /* color: #FFFFFF; */
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+    color: var(--brand-color);
+}
+
+/* ======= END HEADER ======= */
+
+
+/* ======= HERO ======= */
+
+.social-link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.364;
+    letter-spacing: 0.2em;
+    color: var(--bold-color);
+    text-decoration: none;
+}
+.social-link:hover,
+.social-link:focus {
+    color: var(--brand-color);
+}
+
+.main-title {
+    font-family: var(--headline-font);
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.181;
+    letter-spacing: 0.05em;   
+    /* color: #FFFFFF; */
+}
+
+/* ======= END HERO ======= */
+
+
+/* ======= ABOUT US ======= */
+
+.text {
+    font-size: 14px;
+    line-height:1.857;
+    letter-spacing: 0.02em;
+}
+
+/* ======= END ABOUT US ======= */
+
+
+/* ======= SERVICES AND PRICES ======= */
+/* ======= END SERVICES AND PRICES ======= */
+
+
+/* ======= SADISFACTION ======= */
+
+.satisfaction-number {
+    font-family: var(--main-font);
+}
+
+.satisfaction-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.364;
+    text-align: center;
+}
+
+/* ======= END SADISFACTION ======= */
+
+
+/* ======= OUR BARBERS ======= */
+
+.barber-name {
+    font-size: 18px;
+    line-height: 1.389;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.barber-job {
+    font-size: 14px;
+    line-height: 1.357;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--brand-color);
+}
+
+/* ======= END OUR BARBERS ======= */
+
+
+/* ======= GALLERY ======= */
+/* ======= END GALLERY ======= */
+
+
+/* ======= CONTACT ======= */
+
+.address {
+    font-family: var(--main-font);
+}
+
+.address-link {
+    text-decoration: none;
+}
+
+.address-link,
+.address-mail,
+.opening-time {
+    font-size: 18px;
+    line-height: 1.667;
+    letter-spacing: 0.02em;
+}
+
+/* ======= END CONTACT ======= */

@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <title>Barbershop</title>
   </head>
   <body>
@@ -20,23 +31,29 @@
       <nav>
         <ul>
           <li>
-            <a href="#aboutus">O nas</a>
+            <a class="navigation-link white" href="#about-us">O nas</a>
           </li>
           <li>
-            <a href="#servicesandprices">Usługi i ceny</a>
+            <a class="navigation-link white" href="#services-and-prices"
+              >Usługi i ceny</a
+            >
           </li>
           <li>
-            <a href="#barbers">Barberzy</a>
+            <a class="navigation-link white" href="#barbers">Barberzy</a>
           </li>
           <li>
-            <a href="#contact">Kontakt</a>
+            <a class="navigation-link white" href="#contact">Kontakt</a>
           </li>
         </ul>
       </nav>
 
       <ul>
-        <li><a href="tel:+48111111111">+48 111 111 111</a></li>
-        <li><button type="button">REJESTRACJA ONLINE</button></li>
+        <li>
+          <a class="navigation-link white" href="tel:+48111111111">+48 111 111 111</a>
+        </li>
+        <li>
+          <button class="button white" type="button">REJESTRACJA ONLINE</button>
+        </li>
       </ul>
     </header>
 
@@ -47,18 +64,18 @@
         <div>
           <ul>
             <li>
-              <a href="#">Instagram</a>
+              <a class="social-link" href="#">Instagram</a>
             </li>
             <li>
-              <a href="#">Youtube</a>
+              <a class="social-link" href="#">Youtube</a>
             </li>
           </ul>
         </div>
 
         <div>
-          <p>A hair salon for men in Kyiv</p>
-          <h1>BarberShop</h1>
-          <p>
+          <p class="subtitle see-through">A hair salon for men in Kyiv</p>
+          <h1 class="main-title">BarberShop</h1>
+          <p class="description dark-theme">
             Jesteśmy ekspertami w strzyżeniu. Pracujemy szybko, ostrożnie i
             elegancko.
           </p>
@@ -67,7 +84,7 @@
 
       <!-- ABOUT US -->
 
-      <section id="aboutus">
+      <section id="about-us">
         <div>
           <ul>
             <li>
@@ -90,43 +107,72 @@
         </div>
 
         <div>
-          <p>O NAS</p>
-          <h2>Najlepszy Barbershop w Twoim mieście</h2>
-          <p>
+          <p class="subtitle light-theme">O NAS</p>
+          <h2 class="secondary-title light-theme">
+            Najlepszy Barbershop w Twoim mieście
+          </h2>
+          <p class="descriopion white-theme">
             Jeśli chcesz dodać pewności do swojego stylu i wyglądu – jesteś w
             dobrym miejscu.
           </p>
-          <p>
+          <p class="text white-theme">
             Jesteśmy zespołem, który nigdy nie stoi w miejscu i jest cały czas w
             poszukiwaniu coraz lepszych rozwiązań. Kiedy przyjdziesz do nas, już
             nigdy nie będziesz mógł zrezygnować ze swojego nowego stylu.
             Jesteśmy zespołem, który zawsze jest z klientem na “TY”, dobrze
             wiemy, co klient chcę. Chętnie zrobimy upgrade Twojemu wyglądu!
           </p>
-          <button type="button">REJESTRACJA ONLINE</button>
+          <button class="button light-theme" type="button">
+            REJESTRACJA ONLINE
+          </button>
         </div>
       </section>
 
       <!-- SERVICES AND PRICES -->
 
-      <section id="servicesandprices">
-        <p>PRZYJDŹ DO NAJLEPSZYCH BARBERÓW W TWOIM MIEŚCIE</p>
-        <h2>Usługi i ceny</h2>
+      <section id="services-and-prices">
+        <p class="subtitle see-through">
+          PRZYJDŹ DO NAJLEPSZYCH BARBERÓW W TWOIM MIEŚCIE
+        </p>
+        <h2 class="secondary-title white">Usługi i ceny</h2>
         <ul>
-          <li><span>Męskie strzyżenie</span><span>od 100 zł.</span></li>
-          <li><span>Strzyżenie brody</span><span>od 75 zł.</span></li>
-          <li><span>Strzyżenie wąsów</span><span>od 50 zł</span></li>
-          <li><span>Golenie brzytwą</span><span>od 75 zł.</span></li>
-        </ul>
-        <ul>
-          <li><span>Strzyżenie jedna długość</span><span>od 50 zł.</span></li>
-          <li><span>Strzyżenie maszynką</span><span>od 75 zł.</span></li>
           <li>
-            <span>Strzyżenie chłopca (do 12 lat)</span><span>od 80 zł.</span>
+            <span class="description dark-theme">Męskie strzyżenie</span
+            ><span class="description dark-theme">od 100 zł.</span>
           </li>
-          <li><span>Repigmentacja włosów</span><span>od 100 zł.</span></li>
+          <li>
+            <span class="description dark-theme">Strzyżenie brody</span
+            ><span class="description dark-theme">od 75 zł.</span>
+          </li>
+          <li>
+            <span class="description dark-theme">Strzyżenie wąsów</span
+            ><span class="description dark-theme">od 50 zł</span>
+          </li>
+          <li>
+            <span class="description dark-theme">Golenie brzytwą</span
+            ><span class="description dark-theme">od 75 zł.</span>
+          </li>
         </ul>
-        <button type="button">REJESTRACJA ONLINE</button>
+        <ul>
+          <li>
+            <span class="description dark-theme">Strzyżenie jedna długość</span
+            ><span class="description dark-theme">od 50 zł.</span>
+          </li>
+          <li>
+            <span class="description dark-theme">Strzyżenie maszynką</span
+            ><span class="description dark-theme">od 75 zł.</span>
+          </li>
+          <li>
+            <span class="description dark-theme"
+              >Strzyżenie chłopca (do 12 lat)</span
+            ><span class="description dark-theme">od 80 zł.</span>
+          </li>
+          <li>
+            <span class="description dark-theme">Repigmentacja włosów</span
+            ><span class="description dark-theme">od 100 zł.</span>
+          </li>
+        </ul>
+        <button class="button white" type="button">REJESTRACJA ONLINE</button>
       </section>
 
       <!-- SADISFACTION -->
@@ -135,41 +181,44 @@
         <div>
           <ul>
             <li>
-              <p>600</p>
-              <p>Zadowolonych klientów dziennie</p>
+              <p class="satisfaction-number secondary-title light-theme">600</p>
+              <p class="satisfaction-text light-theme">Zadowolonych klientów dziennie</p>
             </li>
             <li>
-              <p>50</p>
-              <p>Nagród za najlepszą obsługę</p>
+              <p class="satisfaction-number secondary-title light-theme">50</p>
+              <p class="satisfaction-text light-theme">Nagród za najlepszą obsługę</p>
             </li>
             <li>
-              <p>20</p>
-              <p>Najlepszych barberów Warszawy</p>
+              <p class="satisfaction-number secondary-title light-theme">20</p>
+              <p class="satisfaction-text light-theme">Najlepszych barberów Warszawy</p>
             </li>
             <li>
-              <p>100</p>
-              <p>Prezentów stałym klientom</p>
+              <p class="satisfaction-number secondary-title light-theme">100</p>
+              <p class="satisfaction-text light-theme">Prezentów stałym klientom</p>
             </li>
           </ul>
         </div>
 
         <div>
-          <p>TRADYCYJNA SZKOŁA</p>
-          <h2>Dlaczego klienci przychodzą do nas?</h2>
-          <P>O nas mówią tylko dobrze. Ale najlepiej jeden raz zobaczyć i odczuć, niż 10 razy przeczytać.</P>
+          <p class="subtitle light-theme">TRADYCYJNA SZKOŁA</p>
+          <h2 class="secondary-title light-theme">Dlaczego klienci przychodzą do nas?</h2>
+          <p class="descriopion white-theme">
+            O nas mówią tylko dobrze. Ale najlepiej jeden raz zobaczyć i odczuć,
+            niż 10 razy przeczytać.
+          </p>
         </div>
       </section>
 
       <!-- OUR BARBERS -->
 
       <section id="barbers">
-        <p>Dla prawdziwych mężczyzn</p>
-        <h2>Nasi barberzy</h2>
+        <p class="subtitle light-theme">Dla prawdziwych mężczyzn</p>
+        <h2 class="secondary-title light-theme">Nasi barberzy</h2>
         <ul>
           <li>
-            <img src="./images/john smith.jpg" alt="John Smith picture">
-            <h3>John Smith</h3>
-            <p>Extreme Barber</p>
+            <img src="./images/john smith.jpg" alt="John Smith picture" />
+            <h3 class="barber-name light-theme">John Smith</h3>
+            <p class="barber-job">Extreme Barber</p>
             <ul>
               <li><a href="#">in</a></li>
               <li><a href="#">tw</a></li>
@@ -178,9 +227,9 @@
             </ul>
           </li>
           <li>
-            <img src="./images/michele doe.jpg" alt="Michele Doe picture">
-            <h3>Michele Doe</h3>
-            <p>Extreme Barber</p>
+            <img src="./images/michele doe.jpg" alt="Michele Doe picture" />
+            <h3 class="barber-name light-theme">Michele Doe</h3>
+            <p class="barber-job">Extreme Barber</p>
             <ul>
               <li><a href="#">in</a></li>
               <li><a href="#">tw</a></li>
@@ -189,9 +238,9 @@
             </ul>
           </li>
           <li>
-            <img src="./images/alan black.jpg" alt="Alan Black picture">
-            <h3>Alan Black</h3>
-            <p>Extreme Barber</p>
+            <img src="./images/alan black.jpg" alt="Alan Black picture" />
+            <h3 class="barber-name light-theme">Alan Black</h3>
+            <p class="barber-job">Extreme Barber</p>
             <ul>
               <li><a href="#">in</a></li>
               <li><a href="#">tw</a></li>
@@ -205,12 +254,23 @@
       <!-- GALLERY -->
 
       <section>
-        <p>W języku łacinskim “barba” oznacza “broda”</p>
+        <p class="subtitle light-theme">W języku łacinskim “barba” oznacza “broda”</p>
         <ul>
-          <li><img src="./images/galleryimg1.jpg" alt="barber cutting hair"></li>
-          <li><img src="./images/galleryimg2.jpg" alt="barber shaving beard"></li>
-          <li><img src="./images/galleryimg3.jpg" alt="barber applying a towel on the face of a client"></li>
-          <li><img src="./images/galleryimg4.jpg" alt="barber shaving neck"></li>
+          <li>
+            <img src="./images/galleryimg1.jpg" alt="barber cutting hair" />
+          </li>
+          <li>
+            <img src="./images/galleryimg2.jpg" alt="barber shaving beard" />
+          </li>
+          <li>
+            <img
+              src="./images/galleryimg3.jpg"
+              alt="barber applying a towel on the face of a client"
+            />
+          </li>
+          <li>
+            <img src="./images/galleryimg4.jpg" alt="barber shaving neck" />
+          </li>
         </ul>
       </section>
 
@@ -218,30 +278,39 @@
 
       <section id="contact">
         <div>
-          <h3>Rezerwacja online</h3>
+          <h3 class="secondary-title white">Rezerwacja online</h3>
+          <button class="button white" type="button">Wysłać</button>
         </div>
 
         <div>
-          <h2>Kontakt</h2>
-          <address>
+          <h2 class="secondary-title white">Kontakt</h2>
+          <address class="address">
             <ul>
-              <li><a href="https://goo.gl/maps/ZC3xwpZe529HttPX7" target="_blank">ul. Prosta 20
-              Warszawa, 00-001</a></li>
-              <li><a href="tel:+48111111111">+48 111 111 111</a></li>
-              <li><a href="mailto:barbershop@email.com">barbershop@email.com</a></li>
+              <li>
+                <a class="address-link dark-theme" href="https://goo.gl/maps/ZC3xwpZe529HttPX7" target="_blank"
+                  >ul. Prosta 20 Warszawa, 00-001</a
+                >
+              </li>
+              <li><a class="address-link dark-theme" href="tel:+48111111111">+48 111 111 111</a></li>
+              <li>
+                <a class="address-mail dark-theme" href="mailto:barbershop@email.com">barbershop@email.com</a>
+              </li>
             </ul>
           </address>
 
-          <h3>Godziny otwarcia</h3>
-          <p>Codziennie od <time datetime="T9:00">9:00</time> do <time datetime="T22:00">22:00</time></p>
+          <h3 class="subtitle white">Godziny otwarcia</h3>
+          <p class="opening-time dark-theme">
+            Codziennie od <time datetime="T9:00">9:00</time> do
+            <time datetime="T22:00">22:00</time>
+          </p>
         </div>
       </section>
     </main>
     <footer>
       <p>&copy Copyright 2020</p>
       <ul>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Youtube</a></li>
+        <li><a class="social-link" href="#">Instagram</a></li>
+        <li><a class="social-link" href="#">Youtube</a></li>
       </ul>
     </footer>
   </body>
