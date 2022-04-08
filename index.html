@@ -18,40 +18,44 @@
     <title>Barbershop</title>
   </head>
   <body>
-    <header>
-      <a href="#"
-        ><img
-          src="/images/barbershop-logo.jpg"
-          alt="logo barbershop"
-          width="69"
-          height="56"
-        />
-      </a>
+    <header class="header">
+      <div class="logo">
+        <a href="#"
+          ><img
+            src="/images/barbershop-logo.jpg"
+            alt="logo barbershop"
+            width="69"
+            height="56"
+          />
+        </a>
+      </div>
 
       <nav>
-        <ul>
-          <li>
+        <ul class="navigation-list">
+          <li class="navigation-item">
             <a class="navigation-link white" href="#about-us">O nas</a>
           </li>
-          <li>
+          <li class="navigation-item">
             <a class="navigation-link white" href="#services-and-prices"
               >Usługi i ceny</a
             >
           </li>
-          <li>
+          <li class="navigation-item">
             <a class="navigation-link white" href="#barbers">Barberzy</a>
           </li>
-          <li>
+          <li class="navigation-item">
             <a class="navigation-link white" href="#contact">Kontakt</a>
           </li>
         </ul>
       </nav>
 
-      <ul>
-        <li>
-          <a class="navigation-link white" href="tel:+48111111111">+48 111 111 111</a>
+      <ul class="header-list">
+        <li class="header-list-item">
+          <a class="navigation-link white" href="tel:+48111111111"
+            >+48 111 111 111</a
+          >
         </li>
-        <li>
+        <li class="header-list-item">
           <button class="button white" type="button">REJESTRACJA ONLINE</button>
         </li>
       </ul>
@@ -60,19 +64,19 @@
     <main>
       <!-- HERO -->
 
-      <section>
-        <div>
-          <ul>
-            <li>
+      <section class="hero">
+        <div class="social-links">
+          <ul class="social-links-list">
+            <li class="social-links-item">
               <a class="social-link" href="#">Instagram</a>
             </li>
-            <li>
+            <li class="social-links-item">
               <a class="social-link" href="#">Youtube</a>
             </li>
           </ul>
         </div>
 
-        <div>
+        <div class="main-section">
           <p class="subtitle see-through">A hair salon for men in Kyiv</p>
           <h1 class="main-title">BarberShop</h1>
           <p class="description dark-theme">
@@ -84,7 +88,7 @@
 
       <!-- ABOUT US -->
 
-      <section id="about-us">
+      <section class="section" id="about-us">
         <div>
           <ul>
             <li>
@@ -130,7 +134,7 @@
 
       <!-- SERVICES AND PRICES -->
 
-      <section id="services-and-prices">
+      <section class="section" id="services-and-prices">
         <p class="subtitle see-through">
           PRZYJDŹ DO NAJLEPSZYCH BARBERÓW W TWOIM MIEŚCIE
         </p>
@@ -177,31 +181,41 @@
 
       <!-- SADISFACTION -->
 
-      <section>
+      <section class="section">
         <div>
           <ul>
             <li>
               <p class="satisfaction-number secondary-title light-theme">600</p>
-              <p class="satisfaction-text light-theme">Zadowolonych klientów dziennie</p>
+              <p class="satisfaction-text light-theme">
+                Zadowolonych klientów dziennie
+              </p>
             </li>
             <li>
               <p class="satisfaction-number secondary-title light-theme">50</p>
-              <p class="satisfaction-text light-theme">Nagród za najlepszą obsługę</p>
+              <p class="satisfaction-text light-theme">
+                Nagród za najlepszą obsługę
+              </p>
             </li>
             <li>
               <p class="satisfaction-number secondary-title light-theme">20</p>
-              <p class="satisfaction-text light-theme">Najlepszych barberów Warszawy</p>
+              <p class="satisfaction-text light-theme">
+                Najlepszych barberów Warszawy
+              </p>
             </li>
             <li>
               <p class="satisfaction-number secondary-title light-theme">100</p>
-              <p class="satisfaction-text light-theme">Prezentów stałym klientom</p>
+              <p class="satisfaction-text light-theme">
+                Prezentów stałym klientom
+              </p>
             </li>
           </ul>
         </div>
 
         <div>
           <p class="subtitle light-theme">TRADYCYJNA SZKOŁA</p>
-          <h2 class="secondary-title light-theme">Dlaczego klienci przychodzą do nas?</h2>
+          <h2 class="secondary-title light-theme">
+            Dlaczego klienci przychodzą do nas?
+          </h2>
           <p class="descriopion white-theme">
             O nas mówią tylko dobrze. Ale najlepiej jeden raz zobaczyć i odczuć,
             niż 10 razy przeczytać.
@@ -211,7 +225,7 @@
 
       <!-- OUR BARBERS -->
 
-      <section id="barbers">
+      <section class="section" id="barbers">
         <p class="subtitle light-theme">Dla prawdziwych mężczyzn</p>
         <h2 class="secondary-title light-theme">Nasi barberzy</h2>
         <ul>
@@ -253,8 +267,10 @@
 
       <!-- GALLERY -->
 
-      <section>
-        <p class="subtitle light-theme">W języku łacinskim “barba” oznacza “broda”</p>
+      <section class="section">
+        <p class="subtitle light-theme">
+          W języku łacinskim “barba” oznacza “broda”
+        </p>
         <ul>
           <li>
             <img src="./images/galleryimg1.jpg" alt="barber cutting hair" />
@@ -276,7 +292,7 @@
 
       <!-- CONTACT -->
 
-      <section id="contact">
+      <section class="section" id="contact">
         <div>
           <h3 class="secondary-title white">Rezerwacja online</h3>
           <button class="button white" type="button">Wysłać</button>
@@ -287,13 +303,24 @@
           <address class="address">
             <ul>
               <li>
-                <a class="address-link dark-theme" href="https://goo.gl/maps/ZC3xwpZe529HttPX7" target="_blank"
+                <a
+                  class="address-link dark-theme"
+                  href="https://goo.gl/maps/ZC3xwpZe529HttPX7"
+                  target="_blank"
                   >ul. Prosta 20 Warszawa, 00-001</a
                 >
               </li>
-              <li><a class="address-link dark-theme" href="tel:+48111111111">+48 111 111 111</a></li>
               <li>
-                <a class="address-mail dark-theme" href="mailto:barbershop@email.com">barbershop@email.com</a>
+                <a class="address-link dark-theme" href="tel:+48111111111"
+                  >+48 111 111 111</a
+                >
+              </li>
+              <li>
+                <a
+                  class="address-mail dark-theme"
+                  href="mailto:barbershop@email.com"
+                  >barbershop@email.com</a
+                >
               </li>
             </ul>
           </address>

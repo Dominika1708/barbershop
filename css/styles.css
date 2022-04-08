@@ -15,8 +15,23 @@ body {
 
 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.section {
+    padding: 130px 55px;
+}
 
 /* ======= COMPONENTS ======= */
 
@@ -47,12 +62,14 @@ ul {
     line-height: 1.364;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .description {
     font-size: 18px;
     line-height: 1.667;
     letter-spacing: 0.02em;
+    margin-top: 20px;
 }
 
 .secondary-title {
@@ -80,13 +97,46 @@ ul {
 }
 
 .white {
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
 }
 
 /* ======= END COMPONENTS ======= */
 
 
 /* ======= HEADER ======= */
+
+.header {
+    display: flex;
+    padding: 32px 55px 0;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.logo {
+    margin-right: 70px;
+}
+
+.navigation-list,
+.header-list {
+    display: flex;
+    align-items: center;
+}
+
+.header-list {
+    margin-left: auto;
+}
+
+.navigation-item:not(:last-child) {
+    margin-right: 41px;
+}
+
+.navigation-item:first-child {
+    margin-left: auto;
+}
+
+.header-list-item:not(:last-child) {
+    margin-right: 37px;
+}
 
 .navigation-link {
     font-weight: 600;
@@ -107,6 +157,34 @@ ul {
 
 /* ======= HERO ======= */
 
+.hero {
+    display: flex;
+}
+
+.main-section {
+    flex-grow: 1;
+    padding-top: 204px;
+    padding-bottom: 206px;
+    padding-left: 100px;
+    margin-right: 40px;
+    justify-self: stretch;
+    background-color: #191C2633;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-links-list {
+    display: flex;
+    transform: rotate(-90deg);
+    align-self: flex-end;
+}
+
+.social-links-item:not(:last-child) {
+    margin-right: 40px;
+}
+
 .social-link {
     font-weight: 600;
     font-size: 11px;
@@ -115,6 +193,7 @@ ul {
     color: var(--bold-color);
     text-decoration: none;
 }
+
 .social-link:hover,
 .social-link:focus {
     color: var(--brand-color);
@@ -127,6 +206,10 @@ ul {
     line-height: 1.181;
     letter-spacing: 0.05em;   
     /* color: #FFFFFF; */
+}
+
+.main-section .description {
+    width: 343px;
 }
 
 /* ======= END HERO ======= */
