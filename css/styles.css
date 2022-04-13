@@ -62,22 +62,31 @@ p {
     line-height: 1.364;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin-bottom: 20px;
 }
 
 .description {
+        margin-top: 20px;
+}
+
+.description,
+.service,
+.price {
     font-size: 18px;
     line-height: 1.667;
     letter-spacing: 0.02em;
-    margin-top: 20px;
 }
 
-.secondary-title {
+.secondary-title,
+.satisfaction-number {
     font-family: var(--headline-font);
     font-weight: 700;
     font-size: 42px;
     line-height: 1.167;
     letter-spacing: 0.05em;
+}
+
+.secondary-title {
+     margin-top: 20px;
 }
 
 .see-through {
@@ -97,7 +106,7 @@ p {
 }
 
 .white {
-    /* color: #FFFFFF; */
+    color: #FFFFFF;
 }
 
 /* ======= END COMPONENTS ======= */
@@ -205,7 +214,8 @@ p {
     font-size: 72px;
     line-height: 1.181;
     letter-spacing: 0.05em;   
-    /* color: #FFFFFF; */
+    color: #FFFFFF;
+    margin-top: 20px;
 }
 
 .main-section .description {
@@ -217,23 +227,108 @@ p {
 
 /* ======= ABOUT US ======= */
 
+.about-us {
+    display: flex;
+}
+
+.about-us-image-list {
+    display: flex;
+}
+
+.about-us-image-item:first-child {
+    padding-right: 30px;
+}
+
+.about-us-image-item:last-child {
+    padding-right: 65px;
+}
+
+.about-us-right {
+    max-width: 500px;
+    margin-right: 36px;
+}
+
 .text {
     font-size: 14px;
     line-height:1.857;
     letter-spacing: 0.02em;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 /* ======= END ABOUT US ======= */
 
 
 /* ======= SERVICES AND PRICES ======= */
+
+.services-and-prices {
+    background-color: #555555;
+}
+
+.services-and-prices-lists {
+    display: flex;
+}
+
+.services-and-prices-list-left,
+.services-and-prices-list-right {
+    padding: 30px 40px;
+    flex-basis: 50%;
+}
+
+.services-and-prices-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-and-prices-item:not(:last-child) {
+padding-bottom: 20px;
+}
+
+.services-and-prices-btn-box {
+    display: flex;
+    justify-content: center;
+}
+
 /* ======= END SERVICES AND PRICES ======= */
 
 
 /* ======= SADISFACTION ======= */
 
+.satisfaction {
+    display: flex;
+    justify-content: space-around;
+}
+
+.satisfaction-list {
+    max-width: 370px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.satisfaction-item {
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    padding: 20px 24px;
+    align-items: center;
+    background-color: #F7F7F7;
+}
+
+.satisfaction-item:nth-child(odd) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.satisfaction-item:nth-child(even) {
+    margin-top: 30px;
+}
+
 .satisfaction-number {
     font-family: var(--main-font);
+}
+
+.satisfaction-right {
+    max-width: 445px;
 }
 
 .satisfaction-text {
