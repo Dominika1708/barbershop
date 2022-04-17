@@ -30,7 +30,14 @@ p {
 }
 
 .section {
-    padding: 130px 55px;
+    padding: 130px 0;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    align-items: center; 
+    margin: 0 auto;       
 }
 
 /* ======= COMPONENTS ======= */
@@ -106,7 +113,7 @@ p {
 }
 
 .white {
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
 }
 
 /* ======= END COMPONENTS ======= */
@@ -343,11 +350,23 @@ padding-bottom: 20px;
 
 /* ======= OUR BARBERS ======= */
 
+.barbers-section {
+    background-color: #F7F7F7;
+}
+
+.barbers-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 44px;
+}
+
 .barber-name {
     font-size: 18px;
     line-height: 1.389;
     text-align: center;
     letter-spacing: 0.02em;
+    margin-top: 30px;
+    margin-bottom: 8px;
 }
 
 .barber-job {
@@ -356,23 +375,77 @@ padding-bottom: 20px;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--brand-color);
+    margin-bottom: 30px;
+}
+
+.barber-socials {
+    display: flex;
+    justify-content: center;
+}
+
+.barber-social-link {
+    display: block;
+    padding: 12px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+.barber-socials > li:not(:last-child) {
+    margin-right: 10px;
 }
 
 /* ======= END OUR BARBERS ======= */
 
 
 /* ======= GALLERY ======= */
+
+.gallery-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 44px;
+}
+
 /* ======= END GALLERY ======= */
 
 
 /* ======= CONTACT ======= */
 
+.contact-section {
+    display: flex;
+    background-color: #191C26;
+    margin: 0 auto;
+}
+
+.bottom-right,
+.bottom-left {
+    flex-grow: 1;
+}
+
+.bottom-left {
+    padding:130px 40px 130px 55px;
+}
+
+.bottom-right {
+    padding:130px 55px 130px 100px;
+    background-image:url(../images/contact-background.jpg) ;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
 .address {
     font-family: var(--main-font);
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+.address-item:not(:last-child) {
+    margin-bottom: 20px;
 }
 
 .address-link {
     text-decoration: none;
+    display: block;
+    width: 167px;
 }
 
 .address-link,
@@ -383,4 +456,27 @@ padding-bottom: 20px;
     letter-spacing: 0.02em;
 }
 
+.opening-time {
+    margin-top: 20px;
+}
+
 /* ======= END CONTACT ======= */
+
+
+/* ======= END FOOTER ======= */
+
+.end {
+    display: flex;
+    justify-content: space-between;
+    padding: 56px 55px;
+}
+
+.end-list {
+    display: flex;
+}
+
+.social-link:first-child {
+margin-right: 40px;
+}
+
+/* ======= END FOOTER ======= */
