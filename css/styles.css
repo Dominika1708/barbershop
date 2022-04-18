@@ -73,13 +73,21 @@ p {
     text-transform: uppercase;
 }
 
-.subtitle::before {
+.subtitle::before,
+.social-links-item:not(:last-child)::before {
     display: block;
     content: "";
     width: 60px;
     height: 1px;
-    background-color: var(--dark-theme-color);
     margin-right: 20px;
+}
+
+.line-light::before {
+    background-color:#9DA4BD99;
+}
+
+.line-dark::before {
+    background-color: var(--bold-color);
 }
 
 .description {
@@ -177,7 +185,6 @@ p {
     line-height: 1.333;
     letter-spacing: 0.1em;
     text-decoration: none;
-    /* color: #FFFFFF; */
 }
 
 .navigation-link:hover,
@@ -223,9 +230,16 @@ p {
     transform: rotate(-90deg);
     align-self: center;
     padding-bottom: 40px;
+    padding-right: 267px;
+    padding-left: 40px;
 }
 
 .social-links-item:not(:last-child) {
+    display: flex;
+    align-items: center;
+}
+
+.social-links-item:not(:last-child)::before {
     margin-right: 40px;
 }
 
@@ -296,7 +310,11 @@ p {
 /* ======= SERVICES AND PRICES ======= */
 
 .services-and-prices {
-    background-color: #555555;
+    background-color: #111319;
+    background-image: 
+    url(../images/services-and-prices-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover ;
 }
 
 .services-and-prices-lists {
@@ -307,6 +325,24 @@ p {
 .services-and-prices-list-right {
     padding: 30px 40px;
     flex-basis: 50%;
+    margin-top: 44px;
+    margin-bottom: 46px;
+}
+
+.services-and-prices-list-left {
+    background-image: linear-gradient(
+        180deg,
+        #171A24,
+        #171A2433
+        );
+} 
+
+.services-and-prices-list-right {
+    background-image: linear-gradient(
+        180deg,
+        #090B13,
+        #090B1333
+        );
 }
 
 .services-and-prices-item {
@@ -411,10 +447,23 @@ padding-bottom: 20px;
 }
 
 .barber-social-link {
+    width: 44px;
+    height: 44px;
     display: block;
     padding: 12px;
     background-color: #FFFFFF;
+    color: var(--bold-color);
     border-radius: 50%;
+}
+
+.barber-social-link:hover,
+.barber-social-link:focus {
+    background-color: var(--bold-color);
+    color: var(--brand-color);
+}
+
+.barber-icon {
+    fill: currentColor;
 }
 
 .barber-socials > li:not(:last-child) {
@@ -438,30 +487,30 @@ padding-bottom: 20px;
 /* ======= CONTACT ======= */
 
 .contact-section {
-        background-color: #191C26;
+    background-color: #191C26;
 }
 
 
-.contact-section > .container {
+  .contact-section > .container {  
     display: flex;
     margin: 0 auto;
+
 }
+
 
 .bottom-right,
 .bottom-left {
     flex-grow: 1;
-}
-
-/* .bottom-left {
-    padding:130px 40px 130px 55px;
+    padding: 130px 0;
 }
 
 .bottom-right {
-    padding:130px 55px 130px 100px; */
-    /* background-image:url(../images/contact-background.jpg) ;
-background-repeat: no-repeat;
-background-size: cover;
-} */
+    padding-left: 100px;
+    padding-right: 105px;
+    background-image:url(../images/contact-bg.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .address-box {
     font-family: var(--main-font);
