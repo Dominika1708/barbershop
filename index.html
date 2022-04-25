@@ -22,7 +22,7 @@
       <div class="container">
         <div class="logo">
           <a href="#">
-            <svg width="69" height="56">
+            <svg class="logo-icon" width="69" height="56">
               <use href="./images/icons.svg#icon-Logo"></use>
             </svg>
           </a>
@@ -54,7 +54,7 @@
             >
           </li>
           <li class="header-list-item">
-            <button class="button white" type="button">
+            <button class="button white" type="button" data-modal-open>
               REJESTRACJA ONLINE
             </button>
           </li>
@@ -68,18 +68,20 @@
       <section class="hero">
         <div class="container">
           <div class="social-links">
-            <ul class="social-links-list">
-              <li class="social-links-item line-dark">
-                <a class="social-link" href="#">Instagram</a>
-              </li>
-              <li class="social-links-item">
-                <a class="social-link" href="#">Youtube</a>
-              </li>
-            </ul>
+              <ul class="social-links-list">
+                <li class="social-links-item line-dark">
+                  <a class="social-link" href="#">Instagram</a>
+                </li>
+                <li class="social-links-item">
+                  <a class="social-link" href="#">Youtube</a>
+                </li>
+              </ul>
           </div>
 
           <div class="main-section">
-            <p class="subtitle see-through line-light">A hair salon for men in Kyiv</p>
+            <p class="subtitle see-through line-light">
+              A hair salon for men in Kyiv
+            </p>
             <h1 class="main-title">BarberShop</h1>
             <p class="description dark-theme">
               Jesteśmy ekspertami w strzyżeniu. Pracujemy szybko, ostrożnie i
@@ -130,7 +132,7 @@
               Jesteśmy zespołem, który zawsze jest z klientem na “TY”, dobrze
               wiemy, co klient chcę. Chętnie zrobimy upgrade Twojemu wyglądu!
             </p>
-            <button class="button light-theme" type="button">
+            <button class="button light-theme" type="button" data-modal-open>
               REJESTRACJA ONLINE
             </button>
           </div>
@@ -174,7 +176,7 @@
                 ><span class="price dark-theme">od 75 zł.</span>
               </li>
               <li class="services-and-prices-item">
-                <span class="service dark-theme">Strzyżenie 12 lat)</span
+                <span class="service dark-theme">Strzyżenie chłopca (do 12 lat)</span
                 ><span class="price dark-theme">od 80 zł.</span>
               </li>
               <li class="services-and-prices-item">
@@ -184,7 +186,11 @@
             </ul>
           </div>
           <div class="services-and-prices-btn-box">
-            <button class="services-and-prices-btn button white" type="button">
+            <button
+              class="services-and-prices-btn button white"
+              type="button"
+              data-modal-open
+            >
               REJESTRACJA ONLINE
             </button>
           </div>
@@ -432,10 +438,28 @@
       <section class="end">
         <p>&copy Copyright 2020</p>
         <ul class="end-list">
-          <li class="social-links-item "><a class="social-link" href="#">Instagram</a></li>
-          <li class="social-links-item"><a class="social-link" href="#">Youtube</a></li>
+          <li class="social-links-item end-item">
+            <a class="social-link" href="#">Instagram</a>
+          </li>
+          <li class="social-links-item">
+            <a class="social-link" href="#">Youtube</a>
+          </li>
         </ul>
       </section>
     </footer>
+
+    <!-- MODAL WINDOW -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="close-btn-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -55,6 +55,8 @@ p {
     cursor: pointer;
     text-align: center;
     padding: 12px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -112,7 +114,7 @@ p {
 }
 
 .secondary-title {
-     margin-top: 20px;
+    margin-top: 20px;
 }
 
 .see-through {
@@ -154,6 +156,13 @@ p {
 
 .logo {
     margin-right: 70px;
+    transform: scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo:hover,
+.logo:focus {
+    transform: scale(1.25);
 }
 
 .navigation-list,
@@ -185,6 +194,7 @@ p {
     line-height: 1.333;
     letter-spacing: 0.1em;
     text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-link:hover,
@@ -229,9 +239,9 @@ p {
     display: flex;
     transform: rotate(-90deg);
     align-self: center;
-    padding-bottom: 40px;
-    padding-right: 267px;
-    padding-left: 40px;
+    position: relative;
+    bottom: -113px;
+    left: -19px;
 }
 
 .social-links-item:not(:last-child) {
@@ -250,6 +260,7 @@ p {
     letter-spacing: 0.2em;
     color: var(--bold-color);
     text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -359,6 +370,21 @@ padding-bottom: 20px;
     justify-content: center;
 }
 
+.service {
+    display: flex;
+    align-items: flex-end;
+}
+
+.service::after {
+    display: flex;
+    justify-content: stretch;
+    content: "";
+    height: 1px;
+    width: 143px;
+    background-color: #9DA4BD1F;
+    margin:0 16px;    
+}
+
 /* ======= END SERVICES AND PRICES ======= */
 
 
@@ -454,15 +480,20 @@ padding-bottom: 20px;
     background-color: #FFFFFF;
     color: var(--bold-color);
     border-radius: 50%;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .barber-social-link:hover,
-.barber-social-link:focus {
+.barber-social-link:focus,
+.close-btn:hover,
+.close-btn:focus {
     background-color: var(--bold-color);
     color: var(--brand-color);
 }
 
-.barber-icon {
+.barber-icon,
+.close-btn-icon {
     fill: currentColor;
 }
 
@@ -490,13 +521,10 @@ padding-bottom: 20px;
     background-color: #191C26;
 }
 
-
-  .contact-section > .container {  
+.contact-section > .container {  
     display: flex;
     margin: 0 auto;
-
 }
-
 
 .bottom-right,
 .bottom-left {
@@ -543,7 +571,7 @@ padding-bottom: 20px;
 /* ======= END CONTACT ======= */
 
 
-/* ======= END FOOTER ======= */
+/* ======= FOOTER ======= */
 
 .end {
     display: flex;
@@ -559,4 +587,126 @@ padding-bottom: 20px;
 margin-right: 40px;
 }
 
+.end-item::before {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 1px;
+    margin-right: 40px;
+    background-color: var(--bold-color);
+}
+
 /* ======= END FOOTER ======= */
+
+
+/* ======= MODAL WINDOW ======= */
+
+.backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000033;
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop>.modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    width: 528px;
+    min-height: 581px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform 250ms ease-in;
+}
+
+.backdrop.is-hidden>.modal {
+    transform: translate(100%, 100%) rotate(45deg);
+}
+
+.close-btn {
+    display: flex;
+    padding: 6px;
+    background-color: transparent;
+    border: 1px solid #0000001A;
+    border-radius: 50%;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes motion {
+    0% {
+        transform: translate(100%, 100%) rotate(0deg);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(-30deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+/* .backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000033;
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop > .modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    min-height: 581px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform 250ms ease-in;
+}
+
+.backdrop.is-hidden > .modal {
+    transform: translate(100%, 100%);
+}
+
+.close-btn {
+    display: flex;
+    padding: 6px;
+    background-color: transparent;
+    border: 1px solid #0000001A;
+    border-radius: 50%;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+} */
+
+/* ======= END MODAL WINDOW ======= */
