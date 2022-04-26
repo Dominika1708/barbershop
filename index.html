@@ -68,14 +68,14 @@
       <section class="hero">
         <div class="container">
           <div class="social-links">
-              <ul class="social-links-list">
-                <li class="social-links-item line-dark">
-                  <a class="social-link" href="#">Instagram</a>
-                </li>
-                <li class="social-links-item">
-                  <a class="social-link" href="#">Youtube</a>
-                </li>
-              </ul>
+            <ul class="social-links-list">
+              <li class="social-links-item line-dark">
+                <a class="social-link" href="#">Instagram</a>
+              </li>
+              <li class="social-links-item">
+                <a class="social-link" href="#">Youtube</a>
+              </li>
+            </ul>
           </div>
 
           <div class="main-section">
@@ -151,48 +151,58 @@
             <ul class="services-and-prices-list-left">
               <li class="services-and-prices-item">
                 <span class="service dark-theme">Męskie strzyżenie</span
+                ><span class="service-line"></span
                 ><span class="price dark-theme">od 100 zł.</span>
               </li>
               <li class="services-and-prices-item">
                 <span class="service dark-theme">Strzyżenie brody</span
+                ><span class="service-line"></span
                 ><span class="price dark-theme">od 75 zł.</span>
               </li>
               <li class="services-and-prices-item">
                 <span class="service dark-theme">Strzyżenie wąsów</span
+                ><span class="service-line"></span
                 ><span class="price dark-theme">od 50 zł</span>
               </li>
               <li class="services-and-prices-item">
                 <span class="service dark-theme">Golenie brzytwą</span
+                ><span class="service-line"></span
                 ><span class="price dark-theme">od 75 zł.</span>
               </li>
             </ul>
             <ul class="services-and-prices-list-right">
               <li class="services-and-prices-item">
                 <span class="service dark-theme">Strzyżenie jedna długość</span
+                ><span class="service-line"></span
                 ><span class="price dark-theme">od 50 zł.</span>
               </li>
               <li class="services-and-prices-item">
                 <span class="service dark-theme">Strzyżenie maszynką</span
+                ><span class="service-line"></span
                 ><span class="price dark-theme">od 75 zł.</span>
               </li>
               <li class="services-and-prices-item">
-                <span class="service dark-theme">Strzyżenie chłopca (do 12 lat)</span
+                <span class="service dark-theme"
+                  >Strzyżenie chłopca (do 12 lat)</span
+                ><span class="service-line"></span
                 ><span class="price dark-theme">od 80 zł.</span>
               </li>
               <li class="services-and-prices-item">
                 <span class="service dark-theme">Repigmentacja włosów</span
+                ><span class="service-line"></span
                 ><span class="price dark-theme">od 100 zł.</span>
               </li>
             </ul>
           </div>
           <div class="services-and-prices-btn-box">
-            <button
-              class="services-and-prices-btn button white"
-              type="button"
-              data-modal-open
+            <a href="#contact">
+              <button
+                class="services-and-prices-btn button white"
+                type="button"
+              >
+                REZERWACJA ONLINE
+              </button></a
             >
-              REJESTRACJA ONLINE
-            </button>
           </div>
         </div>
       </section>
@@ -391,12 +401,37 @@
       <section class="contact-section" id="contact">
         <div class="container">
           <div class="bottom-left">
-            <h3 class="secondary-title white">Rezerwacja online</h3>
-            <button class="button white" type="button">Wysłać</button>
+            <h3 class="secondary-title white contact-title">
+              Rezerwacja online
+            </h3>
+
+            <form class="contact-form" name="reservation-form">
+              <div class="contact-box">
+                <label class="contact-label">
+                  Imie*
+                  <input
+                    class="contact-input"
+                    type="text"
+                    name="name"
+                    required
+                  />
+                </label>
+                <label class="contact-label">
+                  Telefon
+                  <input class="contact-input" type="tel" name="telephone" />
+                </label>
+              </div>
+              <label class="contact-label-text">
+                Wiadomość
+                <textarea class="contact-text" name="comments" rows="4">
+                </textarea>
+              </label>
+              <button class="button white" type="submit">Wysłać</button>
+            </form>
           </div>
 
           <div class="bottom-right">
-            <h2 class="secondary-title white">Kontakt</h2>
+            <h2 class="secondary-title white contact-title">Kontakt</h2>
             <address class="address-box">
               <ul>
                 <li class="address-item">
@@ -457,6 +492,47 @@
             <use href="./images/icons.svg#icon-close-btn"></use>
           </svg>
         </button>
+
+        <form class="modal-form" name="modal-form">
+          <p>Zostaw swoje dane w formularzu poniżej</p>
+          <label class="modal-input-label">
+            Imie
+            <div class="modal-icon-box">
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./images/icons.svg#"></use>
+              </svg>
+            <input class="modal-input" type="text" name="username" />
+            </div>
+          </label>
+          <label class="modal-input-label">
+            Telefon
+            <div class="modal-icon-box">
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./images/icons.svg#"></use>
+              </svg>
+            <input class="modal-input" type="tel" name="phone" />
+            </div>
+          </label>
+          <label class="modal-input-label">
+            Email
+            <div class="modal-icon-box">
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./images/icons.svg#"></use>
+              </svg>
+            <input class="modal-input" type="email" name="email" />
+            </div>
+          </label>
+          <label class="modal-text-label">
+            Komentarz
+            <textarea class="modal-text" name="commentarea" rows="5"></textarea>
+          </label>
+          <label class="modal-check-label">
+            <input class="modal-check-input" type="checkbox" name="policy" value="agreed" required />
+            Oświadczam iż akceptuję <a href="#">Regulamin</a> i
+            <a href="#">Politykę Prywatności.</a>
+          </label>
+          <button class="button" type="submit">Wyślij</button>
+        </form>
       </div>
     </div>
 
