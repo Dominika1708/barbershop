@@ -498,9 +498,7 @@ padding-bottom: 20px;
 }
 
 .barber-social-link:hover,
-.barber-social-link:focus,
-.close-btn:hover,
-.close-btn:focus {
+.barber-social-link:focus {
     background-color: var(--bold-color);
     color: var(--brand-color);
 }
@@ -723,7 +721,7 @@ margin-right: 40px;
     display: flex;
     padding: 6px;
     background-color: transparent;
-    border: 1px solid #0000001A;
+    border: 1px solid var(--brand-color);
     border-radius: 50%;
     position: absolute;
     right: 8px;
@@ -731,6 +729,12 @@ margin-right: 40px;
     cursor: pointer;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn:hover,
+.close-btn:focus { 
+    color: #fff;
+    background-color: var(--brand-color);
 }
 
 @keyframes motion {
@@ -749,6 +753,99 @@ margin-right: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.modal_title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:var(--bold-color);
+    margin-bottom: 12px;
+}
+
+.modal-input-label,
+.modal-text-label {
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.01em;
+    color: var(--dark-theme-color);
+    width: 100%;
+}
+
+.modal-icon-box {
+    position: relative;
+    
+}
+
+.modal-icon {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    margin: 11px 12px;
+    color: currentColor;
+}
+
+.modal-input,
+.modal-text {
+    border: 1px solid #9DA4BD33;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 100%;
+    outline: none;
+    margin-top: 4px;
+}
+
+.modal-icon-box:focus-within {
+    fill: var(--brand-color);
+}
+
+.modal-text:focus-within,
+.modal-input:focus-within {
+    border: 1px solid var(--brand-color);
+} 
+
+.modal-input {
+   padding: 12px 42px; 
+   align-items: center;
+   margin-bottom: 10px;
+}
+
+.modal-text {
+    resize: none;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+}
+
+.modal-text::placeholder {
+    color: #55555580;
+}
+
+.modal-check-label {
+    margin-bottom: 30px;
+}
+
+.modal-check-label::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    display: block;
+    border: 2px solid var(--bold-color);
+    border-radius: 2px;
+}
+
+.modal-check-input:checked + .modal-check-label::before {
+    content: "";
+    display: block;
+    background-image: url(../images/icon\ check.svg);
+    background-size: cover;
+    border: 1px solid var(--brand-color);
+    background-position: center;
+}
+
+.modal-link {
+    color: var(--brand-color);
 }
 
 /* ======= END MODAL WINDOW ======= */
