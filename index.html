@@ -22,39 +22,41 @@
       <div class="container">
         <div class="logo">
           <a href="#">
-            <svg class="logo-icon" width="69" height="56">
+            <svg width="69" height="56">
               <use href="./images/icons.svg#icon-Logo"></use>
             </svg>
           </a>
         </div>
 
         <nav>
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <a class="navigation-link white" href="#about-us">O nas</a>
+          <ul class="navigation">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#about-us">O nas</a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link white" href="#services-and-prices"
+            <li class="navigation__item">
+              <a class="navigation__link" href="#services-and-prices"
                 >Usługi i ceny</a
               >
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link white" href="#barbers">Barberzy</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#barbers">Barberzy</a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link white" href="#contact">Kontakt</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#contact">Kontakt</a>
             </li>
           </ul>
         </nav>
 
-        <ul class="header-list">
-          <li class="header-list-item">
-            <a class="navigation-link white" href="tel:+48111111111"
-              >+48 111 111 111</a
-            >
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="tel:+48111111111">+48 111 111 111</a>
           </li>
-          <li class="header-list-item">
-            <button class="button white" type="button" data-modal-open>
+          <li class="header__item">
+            <button
+              class="button button--onbackground"
+              type="button"
+              data-modal-open
+            >
               REJESTRACJA ONLINE
             </button>
           </li>
@@ -67,13 +69,13 @@
 
       <section class="hero">
         <div class="container">
-          <div class="social-links">
-            <ul class="social-links-list">
-              <li class="social-links-item line-dark">
-                <a class="social-link" href="#">Instagram</a>
+          <div class="social-media">
+            <ul class="social-media__list social-media__list--side">
+              <li class="social-media__item">
+                <a class="social-media__link" href="#">Instagram</a>
               </li>
-              <li class="social-links-item">
-                <a class="social-link" href="#">Youtube</a>
+              <li class="social-media__item">
+                <a class="social-media__link" href="#">Youtube</a>
               </li>
             </ul>
           </div>
@@ -469,18 +471,18 @@
 
     <!-- END MAIN -->
 
-    <footer>
-      <section class="end">
-        <p>&copy Copyright 2020</p>
-        <ul class="end-list">
-          <li class="social-links-item end-item">
-            <a class="social-link" href="#">Instagram</a>
-          </li>
-          <li class="social-links-item">
-            <a class="social-link" href="#">Youtube</a>
-          </li>
-        </ul>
-      </section>
+    <footer class="footer">
+      <p class="footer__text"><svg class="footer__icon" width="12" height="12">
+        <use href="./images/icons.svg#icon-copyright"></use>
+      </svg>Copyright 2020</p>
+      <ul class="social-media__list">
+        <li class="social-media__item">
+          <a class="social-media__link" href="#">Instagram</a>
+        </li>
+        <li class="social-media__item">
+          <a class="social-media__link" href="#">Youtube</a>
+        </li>
+      </ul>
     </footer>
 
     <!-- MODAL WINDOW -->
