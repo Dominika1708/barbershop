@@ -1,0 +1,27 @@
+.barbers {
+    background-color: #F7F7F7;
+}
+
+.barbers__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 44px;
+}
+
+.barbers__name {
+    font-size: 18px;
+    line-height: 1.389;
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+
+.barbers__job {
+    font-size: 14px;
+    line-height: 1.357;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--brand-color);
+    margin-bottom: 30px;
+}

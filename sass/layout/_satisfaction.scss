@@ -1,0 +1,62 @@
+.satisfaction {
+    display: flex;
+    justify-content: space-around;
+}
+
+.satisfaction__list {
+    max-width: 370px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.satisfaction__item {
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    padding: 20px 24px;
+    align-items: center;
+    background-color: #F7F7F7;
+}
+
+.satisfaction__item:nth-child(odd) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.satisfaction__item:nth-child(even) {
+    margin-top: 30px;
+}
+
+.satisfaction__number {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.167;
+    letter-spacing: 0.05em;
+    color: var(--bold-color);
+    position: relative;
+    width: max-content;
+}
+
+.satisfaction__number::after {
+    content: "";
+    display: block;
+    width: 9px;
+    height: 9px;
+    background-image: url(../images/number-plus.svg);
+    position: absolute;
+    top: 10px;
+    right: -8px;
+}
+
+.satisfaction__box {
+    max-width: 445px;
+}
+
+.satisfaction__text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.364;
+    text-align: center;
+    color: var(--bold-color);
+}

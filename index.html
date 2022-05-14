@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -80,12 +80,12 @@
             </ul>
           </div>
 
-          <div class="main-section">
-            <p class="subtitle see-through line-light">
+          <div class="hero__box">
+            <p class="subtitle subtitle--onbackground">
               A hair salon for men in Kyiv
             </p>
-            <h1 class="main-title">BarberShop</h1>
-            <p class="description dark-theme">
+            <h1 class="hero__title">BarberShop</h1>
+            <p class="description description--onbackgroud hero__description">
               Jesteśmy ekspertami w strzyżeniu. Pracujemy szybko, ostrożnie i
               elegancko.
             </p>
@@ -95,11 +95,11 @@
 
       <!-- ABOUT US -->
 
-      <section class="about-us section" id="about-us">
-        <div class="container">
+      <section class="section" id="about-us">
+        <div class="about-us container">
           <div>
-            <ul class="about-us-image-list">
-              <li class="about-us-image-item">
+            <ul class="about-us__list">
+              <li class="about-us__item">
                 <img
                   src="./images/img 1.jpg"
                   alt="barber applying foam on neck"
@@ -107,7 +107,7 @@
                   height="445"
                 />
               </li>
-              <li class="about-us-image-item">
+              <li class="about-us__item">
                 <img
                   src="./images/img 2.jpg"
                   alt="barber shaving the back of the head"
@@ -118,23 +118,27 @@
             </ul>
           </div>
 
-          <div class="about-us-right">
-            <p class="subtitle light-theme line-dark">O NAS</p>
-            <h2 class="secondary-title light-theme">
+          <div class="about-us__box">
+            <p class="subtitle subtitle--nobackground">O NAS</p>
+            <h2 class="secondary-title secondary-title--nobackground">
               Najlepszy Barbershop w Twoim mieście
             </h2>
-            <p class="description white-theme">
+            <p class="description description--nobackgroud">
               Jeśli chcesz dodać pewności do swojego stylu i wyglądu – jesteś w
               dobrym miejscu.
             </p>
-            <p class="text white-theme">
+            <p class="about-us__text">
               Jesteśmy zespołem, który nigdy nie stoi w miejscu i jest cały czas
               w poszukiwaniu coraz lepszych rozwiązań. Kiedy przyjdziesz do nas,
               już nigdy nie będziesz mógł zrezygnować ze swojego nowego stylu.
               Jesteśmy zespołem, który zawsze jest z klientem na “TY”, dobrze
               wiemy, co klient chcę. Chętnie zrobimy upgrade Twojemu wyglądu!
             </p>
-            <button class="button light-theme" type="button" data-modal-open>
+            <button
+              class="button button--nobackground"
+              type="button"
+              data-modal-open
+            >
               REJESTRACJA ONLINE
             </button>
           </div>
@@ -145,109 +149,109 @@
 
       <section class="services-and-prices section" id="services-and-prices">
         <div class="container">
-          <p class="subtitle see-through line-light">
+          <p class="subtitle subtitle--onbackground">
             PRZYJDŹ DO NAJLEPSZYCH BARBERÓW W TWOIM MIEŚCIE
           </p>
-          <h2 class="secondary-title white">Usługi i ceny</h2>
-          <div class="services-and-prices-lists">
-            <ul class="services-and-prices-list-left">
-              <li class="services-and-prices-item">
-                <span class="service dark-theme">Męskie strzyżenie</span
-                ><span class="service-line"></span
-                ><span class="price dark-theme">od 100 zł.</span>
-              </li>
-              <li class="services-and-prices-item">
-                <span class="service dark-theme">Strzyżenie brody</span
-                ><span class="service-line"></span
-                ><span class="price dark-theme">od 75 zł.</span>
-              </li>
-              <li class="services-and-prices-item">
-                <span class="service dark-theme">Strzyżenie wąsów</span
-                ><span class="service-line"></span
-                ><span class="price dark-theme">od 50 zł</span>
-              </li>
-              <li class="services-and-prices-item">
-                <span class="service dark-theme">Golenie brzytwą</span
-                ><span class="service-line"></span
-                ><span class="price dark-theme">od 75 zł.</span>
-              </li>
-            </ul>
-            <ul class="services-and-prices-list-right">
-              <li class="services-and-prices-item">
-                <span class="service dark-theme">Strzyżenie jedna długość</span
-                ><span class="service-line"></span
-                ><span class="price dark-theme">od 50 zł.</span>
-              </li>
-              <li class="services-and-prices-item">
-                <span class="service dark-theme">Strzyżenie maszynką</span
-                ><span class="service-line"></span
-                ><span class="price dark-theme">od 75 zł.</span>
-              </li>
-              <li class="services-and-prices-item">
-                <span class="service dark-theme"
-                  >Strzyżenie chłopca (do 12 lat)</span
-                ><span class="service-line"></span
-                ><span class="price dark-theme">od 80 zł.</span>
-              </li>
-              <li class="services-and-prices-item">
-                <span class="service dark-theme">Repigmentacja włosów</span
-                ><span class="service-line"></span
-                ><span class="price dark-theme">od 100 zł.</span>
-              </li>
-            </ul>
-          </div>
-          <div class="services-and-prices-btn-box">
-            <a href="#contact">
-              <button
-                class="services-and-prices-btn button white"
-                type="button"
-              >
-                REZERWACJA ONLINE
-              </button></a
+          <h2 class="secondary-title secondary-title--onbackground">
+            Usługi i ceny
+          </h2>
+          <div class="services-and-prices__wrap">
+            <ul
+              class="services-and-prices__list services-and-prices__list--first"
             >
+              <li class="services-and-prices__item">
+                <span class="services-and-prices__service"
+                  >Męskie strzyżenie</span
+                ><span class="services-and-prices__line"></span
+                ><span class="services-and-prices__price">od 100 zł.</span>
+              </li>
+              <li class="services-and-prices__item">
+                <span class="services-and-prices__service"
+                  >Strzyżenie brody</span
+                ><span class="services-and-prices__line"></span
+                ><span class="services-and-prices__price">od 75 zł.</span>
+              </li>
+              <li class="services-and-prices__item">
+                <span class="services-and-prices__service"
+                  >Strzyżenie wąsów</span
+                ><span class="services-and-prices__line"></span
+                ><span class="services-and-prices__price">od 50 zł</span>
+              </li>
+              <li class="services-and-prices__item">
+                <span class="services-and-prices__service">Golenie brzytwą</span
+                ><span class="services-and-prices__line"></span
+                ><span class="services-and-prices__price">od 75 zł.</span>
+              </li>
+            </ul>
+            <ul
+              class="services-and-prices__list services-and-prices__list--second"
+            >
+              <li class="services-and-prices__item">
+                <span class="services-and-prices__service"
+                  >Strzyżenie jedna długość</span
+                ><span class="services-and-prices__line"></span
+                ><span class="services-and-prices__price">od 50 zł.</span>
+              </li>
+              <li class="services-and-prices__item">
+                <span class="services-and-prices__service"
+                  >Strzyżenie maszynką</span
+                ><span class="services-and-prices__line"></span
+                ><span class="services-and-prices__price">od 75 zł.</span>
+              </li>
+              <li class="services-and-prices__item">
+                <span class="services-and-prices__service"
+                  >Strzyżenie chłopca (do 12 lat)</span
+                ><span class="services-and-prices__line"></span
+                ><span class="services-and-prices__price">od 80 zł.</span>
+              </li>
+              <li class="services-and-prices__item">
+                <span class="services-and-prices__service"
+                  >Repigmentacja włosów</span
+                ><span class="services-and-prices__line"></span
+                ><span class="services-and-prices__price">od 100 zł.</span>
+              </li>
+            </ul>
           </div>
+
+          <a class="services-and-prices__link" href="#contact">
+            <button class="button button--onbackground" type="button">
+              REZERWACJA ONLINE
+            </button></a
+          >
         </div>
       </section>
 
       <!-- SADISFACTION -->
 
-      <section class="satisfaction section">
-        <div class="container">
+      <section class="section">
+        <div class="satisfaction container">
           <div>
-            <ul class="satisfaction-list">
-              <li class="satisfaction-item">
-                <p class="satisfaction-number light-theme">600</p>
-                <p class="satisfaction-text light-theme">
-                  Zadowolonych klientów dziennie
-                </p>
+            <ul class="satisfaction__list">
+              <li class="satisfaction__item">
+                <p class="satisfaction__number">600</p>
+                <p class="satisfaction__text">Zadowolonych klientów dziennie</p>
               </li>
-              <li class="satisfaction-item">
-                <p class="satisfaction-number light-theme">50</p>
-                <p class="satisfaction-text light-theme">
-                  Nagród za najlepszą obsługę
-                </p>
+              <li class="satisfaction__item">
+                <p class="satisfaction__number">50</p>
+                <p class="satisfaction__text">Nagród za najlepszą obsługę</p>
               </li>
-              <li class="satisfaction-item">
-                <p class="satisfaction-number light-theme">20</p>
-                <p class="satisfaction-text light-theme">
-                  Najlepszych barberów Warszawy
-                </p>
+              <li class="satisfaction__item">
+                <p class="satisfaction__number">20</p>
+                <p class="satisfaction__text">Najlepszych barberów Warszawy</p>
               </li>
-              <li class="satisfaction-item">
-                <p class="satisfaction-number light-theme">100</p>
-                <p class="satisfaction-text light-theme">
-                  Prezentów stałym klientom
-                </p>
+              <li class="satisfaction__item">
+                <p class="satisfaction__number">100</p>
+                <p class="satisfaction__text">Prezentów stałym klientom</p>
               </li>
             </ul>
           </div>
 
-          <div class="satisfaction-right">
-            <p class="subtitle light-theme line-dark">TRADYCYJNA SZKOŁA</p>
-            <h2 class="secondary-title light-theme">
+          <div class="satisfaction__box">
+            <p class="subtitle subtitle--nobackground">TRADYCYJNA SZKOŁA</p>
+            <h2 class="secondary-title secondary-title--nobackground">
               Dlaczego klienci przychodzą do nas?
             </h2>
-            <p class="description white-theme">
+            <p class="description description--nobackgroud">
               O nas mówią tylko dobrze. Ale najlepiej jeden raz zobaczyć i
               odczuć, niż 10 razy przeczytać.
             </p>
@@ -257,110 +261,110 @@
 
       <!-- OUR BARBERS -->
 
-      <section class="barbers-section section" id="barbers">
+      <section class="barbers section" id="barbers">
         <div class="container">
-          <p class="subtitle light-theme line-dark">Dla prawdziwych mężczyzn</p>
-          <h2 class="secondary-title light-theme">Nasi barberzy</h2>
-          <ul class="barbers-list">
-            <li class="barber-box">
+          <p class="subtitle subtitle--nobackground">Dla prawdziwych mężczyzn</p>
+          <h2 class="secondary-title secondary-title--nobackground">Nasi barberzy</h2>
+          <ul class="barbers__list">
+            <li class="barbers__card">
               <img src="./images/john smith.jpg" alt="John Smith picture" />
-              <h3 class="barber-name light-theme">John Smith</h3>
-              <p class="barber-job">Extreme Barber</p>
-              <ul class="barber-socials">
-                <li>
-                  <a class="barber-social-link" href="#">
-                    <svg class="barber-icon" width="20" height="20">
+              <h3 class="barbers__name light-theme">John Smith</h3>
+              <p class="barbers__job">Extreme Barber</p>
+              <ul class="socials">
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a class="barber-social-link" href="#">
-                    <svg class="barber-icon" width="20" height="20">
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a class="barber-social-link" href="#">
-                    <svg class="barber-icon" width="20" height="20">
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a class="barber-social-link" href="#">
-                    <svg class="barber-icon" width="20" height="20">
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin"></use>
                     </svg>
                   </a>
                 </li>
               </ul>
             </li>
-            <li class="barber-box">
+            <li class="barbers__card">
               <img src="./images/michele doe.jpg" alt="Michele Doe picture" />
-              <h3 class="barber-name light-theme">Michele Doe</h3>
-              <p class="barber-job">Extreme Barber</p>
-              <ul class="barber-socials">
-                <li>
-                  <a class="barber-social-link" href="#">
-                    <svg class="barber-icon" width="20" height="20">
+              <h3 class="barbers__name light-theme">Michele Doe</h3>
+              <p class="barbers__job">Extreme Barber</p>
+              <ul class="socials">
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a class="barber-social-link" href="#">
-                    <svg class="barber-icon" width="20" height="20">
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a class="barber-social-link" href="#">
-                    <svg class="barber-icon" width="20" height="20">
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a class="barber-social-link" href="#">
-                    <svg class="barber-icon" width="20" height="20">
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin"></use>
                     </svg>
                   </a>
                 </li>
               </ul>
             </li>
-            <li class="barber-box">
+            <li class="barbers__card">
               <img src="./images/alan black.jpg" alt="Alan Black picture" />
-              <h3 class="barber-name light-theme">Alan Black</h3>
-              <p class="barber-job">Extreme Barber</p>
-              <ul class="barber-socials">
-                <li>
-                  <a class="barber-social-link" href="#">
-                    <svg class="barber-icon" width="20" height="20">
+              <h3 class="barbers__name light-theme">Alan Black</h3>
+              <p class="barbers__job">Extreme Barber</p>
+              <ul class="socials">
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a class="barber-social-link" href="#">
-                    <svg class="barber-icon" width="20" height="20">
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a class="barber-social-link" href="#">
-                    <svg class="barber-icon" width="20" height="20">
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a class="barber-social-link" href="#">
-                    <svg class="barber-icon" width="20" height="20">
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin"></use>
                     </svg>
                   </a>
@@ -375,23 +379,23 @@
 
       <section class="section">
         <div class="container">
-          <p class="subtitle light-theme line-dark">
+          <p class="subtitle subtitle--nobackground">
             W języku łacinskim “barba” oznacza “broda”
           </p>
-          <ul class="gallery-list">
-            <li class="gallery-item">
+          <ul class="gallery">
+            <li class="gallery__item">
               <img src="./images/galleryimg1.jpg" alt="barber cutting hair" />
             </li>
-            <li class="gallery-item">
+            <li class="gallery__item">
               <img src="./images/galleryimg2.jpg" alt="barber shaving beard" />
             </li>
-            <li class="gallery-item">
+            <li class="gallery__item">
               <img
                 src="./images/galleryimg3.jpg"
                 alt="barber applying a towel on the face of a client"
               />
             </li>
-            <li class="gallery-item">
+            <li class="gallery__item">
               <img src="./images/galleryimg4.jpg" alt="barber shaving neck" />
             </li>
           </ul>
@@ -400,58 +404,58 @@
 
       <!-- CONTACT -->
 
-      <section class="contact-section" id="contact">
+      <section class="contact" id="contact">
         <div class="container">
-          <div class="bottom-left">
-            <h3 class="secondary-title white contact-title">
+          <div class="contact__reservation">
+            <h3 class="contact__title">
               Rezerwacja online
             </h3>
 
-            <form class="contact-form" name="reservation-form">
-              <div class="contact-box">
-                <label class="contact-label">
+            <form class="contact__form" name="reservation-form">
+              <div class="contact__box">
+                <label class="contact__label contact__label--input">
                   Imie*
                   <input
-                    class="contact-input"
+                    class="contact__write contact__write--input"
                     type="text"
                     name="name"
                     required
                   />
                 </label>
-                <label class="contact-label">
+                <label class="contact__label contact__label--input">
                   Telefon
-                  <input class="contact-input" type="tel" name="telephone" />
+                  <input class="contact__write contact__write--input" type="tel" name="telephone" />
                 </label>
               </div>
-              <label class="contact-label-text">
+              <label class="contact__label contact__label--text">
                 Wiadomość
-                <textarea class="contact-text" name="comments" rows="4">
+                <textarea class="contact__write contact__write--text" name="comments" rows="4">
                 </textarea>
               </label>
-              <button class="button white" type="submit">Wysłać</button>
+              <button class="button button--onbackground" type="submit">Wysłać</button>
             </form>
           </div>
 
-          <div class="bottom-right">
-            <h2 class="secondary-title white contact-title">Kontakt</h2>
-            <address class="address-box">
+          <div class="address">
+            <h2 class="contact__title">Kontakt</h2>
+            <address class="address__wrap">
               <ul>
-                <li class="address-item">
+                <li class="address__item">
                   <a
-                    class="address-link dark-theme"
+                    class="address__link"
                     href="https://goo.gl/maps/ZC3xwpZe529HttPX7"
                     target="_blank"
                     >ul. Prosta 20 Warszawa, 00-001</a
                   >
                 </li>
-                <li class="address-item">
-                  <a class="address-link dark-theme" href="tel:+48111111111"
+                <li class="address__item">
+                  <a class="address__link" href="tel:+48111111111"
                     >+48 111 111 111</a
                   >
                 </li>
-                <li class="address-item">
+                <li class="address__item">
                   <a
-                    class="address-mail dark-theme"
+                    class="address__mail"
                     href="mailto:barbershop@email.com"
                     >barbershop@email.com</a
                   >
@@ -459,8 +463,8 @@
               </ul>
             </address>
 
-            <h3 class="subtitle white line-light">Godziny otwarcia</h3>
-            <p class="opening-time dark-theme">
+            <h3 class="subtitle subtitle--onbackground contact__subtitle">Godziny otwarcia</h3>
+            <p class="address__time">
               Codziennie od <time datetime="T9:00">9:00</time> do
               <time datetime="T22:00">22:00</time>
             </p>
@@ -472,9 +476,11 @@
     <!-- END MAIN -->
 
     <footer class="footer">
-      <p class="footer__text"><svg class="footer__icon" width="12" height="12">
-        <use href="./images/icons.svg#icon-copyright"></use>
-      </svg>Copyright 2020</p>
+      <p class="footer__text">
+        <svg class="footer__icon" width="12" height="12">
+          <use href="./images/icons.svg#icon-copyright"></use></svg
+        >Copyright 2020
+      </p>
       <ul class="social-media__list">
         <li class="social-media__item">
           <a class="social-media__link" href="#">Instagram</a>
@@ -489,66 +495,66 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-btn" data-modal-close>
-          <svg class="close-btn-icon" width="18" height="18">
+        <button type="button" class="modal__button" data-modal-close>
+          <svg class="modal__icon" width="18" height="18">
             <use href="./images/icons.svg#icon-close-btn"></use>
           </svg>
         </button>
 
-        <form class="modal-form" name="modal-form">
-          <p class="modal_title">Zostaw swoje dane w formularzu poniżej</p>
-          <label class="modal-input-label">
+        <form class="order" name="modal-form">
+          <p class="order__title">Zostaw swoje dane w formularzu poniżej</p>
+          <label class="order__label">
             Imie
-            <div class="modal-icon-box">
-              <svg class="modal-icon" width="18" height="18">
+            <div class="order__box">
+              <svg class="order__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
-              <input class="modal-input" type="text" name="username" />
+              <input class="order__write order__write--input" type="text" name="username" />
             </div>
           </label>
-          <label class="modal-input-label">
+          <label class="order__label">
             Telefon
-            <div class="modal-icon-box">
-              <svg class="modal-icon" width="18" height="18">
+            <div class="order__box">
+              <svg class="order__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
-              <input class="modal-input" type="tel" name="phone" />
+              <input class="order__write order__write--input" type="tel" name="phone" />
             </div>
           </label>
-          <label class="modal-input-label">
+          <label class="order__label">
             Email
-            <div class="modal-icon-box">
-              <svg class="modal-icon" width="18" height="18">
+            <div class="order__box">
+              <svg class="order__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
-              <input class="modal-input" type="email" name="email" />
+              <input class="order__write order__write--input" type="email" name="email" />
             </div>
           </label>
-          <label class="modal-text-label">
+          <label class="order__label">
             Komentarz
             <textarea
-              class="modal-text"
+              class="order__write order__write--text"
               name="commentarea"
               rows="5"
               placeholder="Wprowadź tekst"
             ></textarea>
           </label>
-          <div class="policy-box">
+          <div class="policy">
             <input
-              class="modal-check-input"
+              class="policy__input"
               id="policy"
               type="checkbox"
               name="policy"
               value="agreed"
               required
             />
-            <label class="modal-check-label" for="policy">
+            <label class="policy__label" for="policy">
               Oświadczam iż akceptuję
-              <a class="modal-link" href="#">Regulamin</a> i
-              <a class="modal-link" href="#">Politykę Prywatności.</a>
+              <a class="policy__link" href="#">Regulamin</a> i
+              <a class="policy__link" href="#">Politykę Prywatności.</a>
             </label>
           </div>
-          <button class="button" type="submit">Wyślij</button>
+          <button class="button button--nobackground" type="submit">Wyślij</button>
         </form>
       </div>
     </div>

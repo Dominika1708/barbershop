@@ -1,0 +1,33 @@
+.subtitle {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.364;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.subtitle::before {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+}
+
+.subtitle--onbackground {
+    color: #9DA4BD99;
+}
+
+.subtitle--onbackground::before {
+    background-color: #9DA4BD99;
+}
+
+.subtitle--nobackground {
+    color: var(--bold-color);
+}
+
+.subtitle--nobackground::before {
+    background-color: var(--bold-color);
+}

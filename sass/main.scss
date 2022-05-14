@@ -1,1 +1,26 @@
 @import './utils/variables';
+@import './utils/animation';
+
+@import './base/common';
+@import './base/section';
+@import './base/container';
+
+@import './components/button';
+@import './components/subtitle';
+@import './components/secondary-title';
+@import './components/description';
+@import './components/logo';
+@import './components/social-media';
+@import './components/socials';
+@import './components/order';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/about-us';
+@import './layout/services-and-prices';
+@import './layout/satisfaction';
+@import './layout/barbers';
+@import './layout/gallery';
+@import './layout/contact';
+@import './layout/footer';
+@import './layout/modal';

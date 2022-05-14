@@ -1,0 +1,126 @@
+.contact {
+    background-color: #191C26;
+}
+
+.contact .container {
+    display: flex;
+    margin: 0 auto;
+    align-items: baseline;
+}
+
+.contact__title {
+    font-family: var(--headline-font);
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.167;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.contact__form {
+    margin: 44px 40px 0 0;
+}
+
+.contact__box {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact__label {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.364;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.4);
+    display: flex;
+    flex-grow: 1;
+    border-bottom: 1px solid;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.contact__label:focus-within,
+.contact__label:hover {
+    color: #ffffff;
+}
+
+.contact__label--input:first-of-type {
+    margin-right: 30px;
+}
+
+.contact__label--input {
+    padding-bottom: 8px;
+    margin-bottom: 44px;
+}
+
+.contact__label--text {
+    flex-direction: column;
+    margin-bottom: 44px;
+}
+
+.contact__write {
+    font-size: 11px;
+    line-height: 1.364;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.contact__write--input {
+    flex-grow: 1;
+}
+
+.contact__write--text {
+    resize: none;
+}
+
+.address,
+.contact__reservation {
+    flex-grow: 1;
+    padding: 130px 0;
+}
+
+.address {
+    padding-left: 100px;
+    padding-right: 105px;
+    background-image: url(../images/contact-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.address__wrap {
+    font-family: var(--main-font);
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+.address__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.address__link {
+    text-decoration: none;
+    display: block;
+    width: 167px;
+}
+
+.address__link,
+.address__mail,
+.address__time {
+    font-family: var(--main-font);
+    font-size: 18px;
+    line-height: 1.667;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
+}
+
+.address__time {
+    margin-top: 20px;
+}
+
+.contact__subtitle {
+    color: #FFFFFF;
+}
