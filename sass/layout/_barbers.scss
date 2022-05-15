@@ -22,6 +22,6 @@
     line-height: 1.357;
     text-align: center;
     letter-spacing: 0.02em;
-    color: var(--brand-color);
+    color: getColor(accent);
     margin-bottom: 30px;
 }

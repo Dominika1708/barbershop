@@ -1,10 +1,32 @@
 :root {
-    --main-font: font-family: 'Open Sans',
+    --main-font: 'Open Sans',
         sans-serif;
-    --headline-font: font-family: 'Raleway',
+    --headline-font: 'Raleway',
         sans-serif;
-    --brand-color: #FF6C00;
-    --dark-theme-color: #9DA4BD;
-    --white-theme-color: #555555;
-    --bold-color: #303030;
 }
+
+
+$colors: (
+    'primary': #555555,
+    'secondary': #9DA4BD,
+    'accent': #FF6C00,
+    'bold': #303030,
+    'clear': #FFFFFF,
+    'light': #9DA4BD99,                   //secondary 60%
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+};
+
+
+$background: (
+    'primary': #191C26,
+    'secondary': #F7F7F7,
+    'linePrimary': #9DA4BD1F,             //secondary colors 12%
+    'lineSecondary': #9DA4BD66,           //secondary colors 40%
+);
+
+@function getBG($key) {
+    @return map-get($background, $key)
+};
