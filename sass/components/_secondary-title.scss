@@ -1,16 +1,16 @@
 .secondary-title {
-    font-family: var(--headline-font);
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 1.167;
-    letter-spacing: 0.05em;
-    margin-top: 20px;
-}
+  font-family: var(--headline-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.167;
+  letter-spacing: 0.05em;
+  margin-top: 20px;
 
-.secondary-title--nobackground {
-    color: var(--bold-color);
-}
+  &--nobackground {
+    color: getColor(bold);
+  }
 
-.secondary-title--onbackground {
-    color: #FFFFFF;
+  &--onbackground {
+    color: getColor(clear);
+  }
 }

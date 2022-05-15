@@ -128,7 +128,7 @@ img {
 }
 
 .secondary-title--nobackground {
-  color: var(--bold-color);
+  color: #303030;
 }
 
 .secondary-title--onbackground {
