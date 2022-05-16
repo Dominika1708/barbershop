@@ -103,8 +103,37 @@
 
 .address__link {
     text-decoration: none;
-    display: block;
-    width: 167px;
+    width: fit-content;
+    display: flex;
+
+    &::before {
+        content: "";
+        display: block;
+        margin-right: 20px;
+        width: 24px;
+        height: 24px;
+    }
+
+    &--street::before {
+        background-image: url(../images/sass-icons/map-pin.svg);        
+    }
+
+    &--phone::before {
+        background-image: url(../images/sass-icons/phone.svg);
+    }
+}
+
+.address__mail {
+    display: flex;
+
+    &::before {
+        content: "";
+        display: block;
+        margin-right: 20px;
+        width: 24px;
+        height: 24px;
+        background-image: url(../images/sass-icons/mail.svg);
+    }
 }
 
 .address__link,

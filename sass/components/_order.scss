@@ -73,6 +73,7 @@
 
   &__label {
     padding-left: 8px;
+    cursor: pointer;
 
     &::before {
       content: "";
@@ -85,6 +86,7 @@
       position: absolute;
       left: 0;
       top: 2px;
+      cursor: pointer;
     }
   }
 
@@ -94,7 +96,7 @@
     &:checked + .policy__label::before {
       content: "";
       display: block;
-      background-image: url(../images/icon-check.svg);
+      background-image: url(../images/sass-icons/icon-check.svg);
       background-size: cover;
       border: 1px solid getColor(accent);
       background-position: center;
