@@ -1,28 +1,30 @@
 .about-us {
+  display: flex;
+
+  &__list {
     display: flex;
-}
+  }
 
-.about-us__list {
-    display: flex;
-}
+  &__item {
+    &:first-child {
+      margin-right: 30px;
+    }
 
-.about-us__item:first-child {
-    margin-right: 30px;
-}
+    &:last-child {
+      margin-right: 65px;
+    }
+  }
 
-.about-us__item:last-child {
-    margin-right: 65px;
-}
-
-.about-us__box {
+  &__box {
     max-width: 500px;
-}
+  }
 
-.about-us__text {
+  &__text {
     font-size: 14px;
     line-height: 1.857;
     letter-spacing: 0.02em;
     margin-top: 20px;
     margin-bottom: 40px;
-    color: var(--white-theme-color);
+    color: getColor(primary);
+  }
 }

@@ -1,27 +1,27 @@
 .barbers {
-    background-color: #F7F7F7;
-}
+  background-color: getBG(secondary);
 
-.barbers__list {
+  &__list {
     display: flex;
     justify-content: space-between;
     margin-top: 44px;
-}
+  }
 
-.barbers__name {
+  &__name {
     font-size: 18px;
     line-height: 1.389;
     text-align: center;
     letter-spacing: 0.02em;
     margin-top: 30px;
     margin-bottom: 8px;
-}
+  }
 
-.barbers__job {
+  &__job {
     font-size: 14px;
     line-height: 1.357;
     text-align: center;
     letter-spacing: 0.02em;
     color: getColor(accent);
     margin-bottom: 30px;
+  }
 }

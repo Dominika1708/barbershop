@@ -1,32 +1,31 @@
 .contact {
-    background-color: #191C26;
-}
+  background-color: getBG(primary);
 
-.contact .container {
+  & .container {
     display: flex;
     margin: 0 auto;
     align-items: baseline;
-}
+  }
 
-.contact__title {
+  &__title {
     font-family: var(--headline-font);
     font-weight: 700;
     font-size: 42px;
     line-height: 1.167;
     letter-spacing: 0.05em;
-    color: #FFFFFF;
-}
+    color: getColor(clear);
+  }
 
-.contact__form {
+  &__form {
     margin: 44px 40px 0 0;
-}
+  }
 
-.contact__box {
+  &__box {
     display: flex;
     flex-direction: row;
-}
+  }
 
-.contact__label {
+  &__label {
     font-weight: 600;
     font-size: 11px;
     line-height: 1.364;
@@ -38,118 +37,119 @@
     border-bottom: 1px solid;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
-}
 
-.contact__label:focus-within,
-.contact__label:hover {
-    color: #ffffff;
-}
+    &:focus-within,
+    &:hover {
+      color: getColor(clear);
+    }
 
-.contact__label--input:first-of-type {
-    margin-right: 30px;
-}
+    &--input:first-of-type {
+      margin-right: 30px;
+    }
 
-.contact__label--input {
-    padding-bottom: 8px;
-    margin-bottom: 44px;
-}
+    &--input {
+      padding-bottom: 8px;
+      margin-bottom: 44px;
+    }
 
-.contact__label--text {
-    flex-direction: column;
-    margin-bottom: 44px;
-}
+    &--text {
+      flex-direction: column;
+      margin-bottom: 44px;
+    }
+  }
 
-.contact__write {
+  &__write {
     font-size: 11px;
     line-height: 1.364;
     letter-spacing: 0.1em;
-    color: #ffffff;
+    color: getColor(clear);
     background-color: transparent;
     outline: none;
     border: none;
-}
 
-.contact__write--input {
-    flex-grow: 1;
-}
+    &--input {
+      flex-grow: 1;
+    }
 
-.contact__write--text {
-    resize: none;
+    &--text {
+      resize: none;
+    }
+  }
+
+  &__subtitle {
+    color: getColor(clear);
+  }
 }
 
 .address,
 .contact__reservation {
-    flex-grow: 1;
-    padding: 130px 0;
+  flex-grow: 1;
+  padding: 130px 0;
 }
 
 .address {
-    padding-left: 100px;
-    padding-right: 105px;
-    background-image: url(../images/contact-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+  padding-left: 100px;
+  padding-right: 105px;
+  background-image: url(../images/contact-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 
-.address__wrap {
+  &__wrap {
     font-family: var(--main-font);
     margin-top: 40px;
     margin-bottom: 70px;
-}
+  }
 
-.address__item:not(:last-child) {
+  &__item:not(:last-child) {
     margin-bottom: 20px;
-}
+  }
 
-.address__link {
+  &__link {
     text-decoration: none;
     width: fit-content;
     display: flex;
 
     &::before {
-        content: "";
-        display: block;
-        margin-right: 20px;
-        width: 24px;
-        height: 24px;
+      content: "";
+      display: block;
+      margin-right: 20px;
+      width: 24px;
+      height: 24px;
     }
 
     &--street::before {
-        background-image: url(../images/sass-icons/map-pin.svg);        
+      background-image: url(../images/sass-icons/map-pin.svg);
     }
 
     &--phone::before {
-        background-image: url(../images/sass-icons/phone.svg);
+      background-image: url(../images/sass-icons/phone.svg);
     }
-}
+  }
 
-.address__mail {
+  &__mail {
     display: flex;
 
     &::before {
-        content: "";
-        display: block;
-        margin-right: 20px;
-        width: 24px;
-        height: 24px;
-        background-image: url(../images/sass-icons/mail.svg);
+      content: "";
+      display: block;
+      margin-right: 20px;
+      width: 24px;
+      height: 24px;
+      background-image: url(../images/sass-icons/mail.svg);
     }
-}
+  }
 
-.address__link,
-.address__mail,
-.address__time {
+  &__link,
+  &__mail,
+  &__time {
     font-family: var(--main-font);
     font-size: 18px;
     line-height: 1.667;
     letter-spacing: 0.02em;
-    color: #9DA4BD;
-}
+    color: getColor(secondary);
+  }
 
-.address__time {
+  &__time {
     margin-top: 20px;
-}
-
-.contact__subtitle {
-    color: #FFFFFF;
+  }
 }
