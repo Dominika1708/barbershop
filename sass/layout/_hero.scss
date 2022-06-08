@@ -3,6 +3,7 @@
 
   & .container {
     display: flex;
+    padding-right: 0;
   }
 
   &__box {
@@ -10,8 +11,7 @@
     padding-top: 204px;
     padding-bottom: 206px;
     padding-left: 100px;
-    justify-self: stretch;
-    background-image: #191c2633;
+    background-color: #191c2633;
     background-image: linear-gradient(
         rgba(25, 28, 38, 0.2),
         rgba(25, 28, 38, 0.2)
