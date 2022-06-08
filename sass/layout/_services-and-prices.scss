@@ -1,63 +1,57 @@
 .services-and-prices {
-    background-color: #111319;
-    background-image:
-        url(../images/services-and-prices-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+  background-color: #111319;
+  background-image: url(../images/services-and-prices-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 
-.services-and-prices__wrap {
+  &__wrap {
     display: flex;
-}
+  }
 
-.services-and-prices__list {
+  &__list {
     padding: 30px 40px;
     flex-basis: 50%;
     margin-top: 44px;
     margin-bottom: 46px;
-}
 
-.services-and-prices__list--first {
-    background-image: linear-gradient(180deg,
-            #171A24,
-            #171A2433);
-}
+    &--first {
+      background-image: linear-gradient(180deg, #171a24, #171a2433);
+    }
 
-.services-and-prices__list--second {
-    background-image: linear-gradient(180deg,
-            #090B13,
-            #090B1333);
-}
+    &--second {
+      background-image: linear-gradient(180deg, #090b13, #090b1333);
+    }
+  }
 
-.services-and-prices__item {
+  &__item {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-}
 
-.services-and-prices__item:not(:last-child) {
-    padding-bottom: 20px;
-}
+    &:not(:last-child) {
+      padding-bottom: 20px;
+    }
+  }
 
-.services-and-prices__link {
+  &__link {
     display: flex;
     justify-content: center;
     text-decoration: none;
-}
+  }
 
-.services-and-prices__service,
-.services-and-prices__price {
+  &__service,
+  &__price {
     font-size: 18px;
     line-height: 1.667;
     letter-spacing: 0.02em;
-    color: var(--dark-theme-color);
-}
+    color: getColor(secondary);
+  }
 
-.services-and-prices__line {
+  &__line {
     display: block;
     height: 1px;
     background-color: rgba(157, 164, 189, 0.12);
     margin: 0px 6px;
     flex-grow: 1;
-
+  }
 }
