@@ -1,48 +1,47 @@
-@media screen and (max-width: 767.9px) {
-    #navMenu {
-        display: block;
-        z-index: 10;
-    }
-
-    #navMenu>span {
-        display: block;
-        width: 28px;
-        height: 2px;
-        // border-radius: 9999px;
-        background-color: getColor(clear);
-    }
-
-    #navMenu>span:not(:last-child) {
-        margin-bottom: 7px;
-    }
-
-    #navMenu,
-    #navMenu>span {
-        transition: all .4s ease-in-out;
-    }
-
-    #navMenu.active {
-        transition-delay: 0.8s;
-        transform: rotate(45deg);
-    }
-
-    #navMenu.active>span:nth-child(2) {
-        width: 0;
-    }
-
-    #navMenu.active>span:nth-child(1),
-    #navMenu.active>span:nth-child(3) {
-        transition-delay: .4s;
-    }
-
-    #navMenu.active>span:nth-child(1) {
-        transform: translateY(9px);
-    }
-
-    #navMenu.active>span:nth-child(3) {
-        transform: translateY(-9px) rotate(90deg);
-    }
+#navMenu {
+    display: block;
+    z-index: 10;
 }
+
+#navMenu>span {
+    display: block;
+    width: 28px;
+    height: 2px;
+    // border-radius: 9999px;
+    background-color: getColor(clear);
+}
+
+#navMenu>span:not(:last-child) {
+    margin-bottom: 7px;
+}
+
+#navMenu,
+#navMenu>span {
+    transition: all .4s ease-in-out;
+}
+
+#navMenu.active {
+    transition-delay: 0.8s;
+    transform: rotate(45deg);
+}
+
+#navMenu.active>span:nth-child(2) {
+    width: 0;
+}
+
+#navMenu.active>span:nth-child(1),
+#navMenu.active>span:nth-child(3) {
+    transition-delay: .4s;
+}
+
+#navMenu.active>span:nth-child(1) {
+    transform: translateY(9px);
+}
+
+#navMenu.active>span:nth-child(3) {
+    transform: translateY(-9px) rotate(90deg);
+}
+
 
 @media screen and (min-width:768px) {
     #navMenu {
@@ -54,14 +53,6 @@
     position: fixed;
     top: 51px;
     right: 32px;
-}
-
-.menu.is-open {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transform: translateX(100%);
-    transition: transform 500ms ease-in-out;
 }
 
 .menu {
@@ -77,7 +68,15 @@
     top: 0;
     right: 0;
     transform: translateX(0);
-    transition: transform 500ms ease-in-out;
+    transition: transform 500ms linear;
+
+    &.is-open {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateX(100%);  
+             
+    }
 
     &__link {
         font-size: 18px;
