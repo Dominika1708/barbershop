@@ -15,6 +15,11 @@
       bottom: -113px;
       left: -19px;
     }
+
+    &--menu {
+      flex-direction: column;
+      gap: 24px;
+    }
   }
 
   &__item {
@@ -29,6 +34,16 @@
         height: 1px;
         margin-right: 40px;
         background-color: getColor(bold);
+      }
+    }
+
+    &--menu {
+      &:first-child::before {
+        background-color: #FFFFFF66;
+      }
+
+      &:last-child {
+        margin-left: 100px;
       }
     }
   }
@@ -46,5 +61,17 @@
     &:focus {
       color: getColor(accent);
     }
+
+    &--menu {
+      color: getColor(clear);
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+
+  .social-media {
+    display: none;
   }
 }

@@ -22,7 +22,7 @@
       <div class="container">
         <div class="logo">
           <a href="#">
-            <svg width="69" height="56">
+            <svg class="logo__icon" width="69" height="56">
               <use href="./images/icons.svg#icon-Logo"></use>
             </svg>
           </a>
@@ -61,6 +61,61 @@
             </button>
           </li>
         </ul>
+
+        <!-- MENU -->
+
+        <div id="navMenu" data-menu-open>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="menu is-open" data-menu>
+          <nav>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="navigation__link menu__link" href="#about-us">O nas</a>
+              </li>
+              <li class="menu__item">
+                <a class="navigation__link menu__link" href="#services-and-prices"
+                  >Usługi i ceny</a
+                >
+              </li>
+              <li class="menu__item">
+                <a class="navigation__link menu__link" href="#barbers">Barberzy</a>
+              </li>
+              <li class="menu__item">
+                <a class="navigation__link menu__link" href="#contact">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="header__link menu__link" href="tel:+48111111111"
+                >+48 111 111 111</a
+              >
+            </li>
+            <li class="menu__item">
+              <button
+                class="button button--onbackground"
+                type="button"
+                data-modal-open
+              >
+                REJESTRACJA ONLINE
+              </button>
+            </li>
+          </ul>
+
+          <ul class="social-media__list social-media__list--menu">
+            <li class="social-media__item social-media__item--menu">
+              <a class="social-media__link social-media__link--menu" href="#">Instagram</a>
+            </li>
+            <li class="social-media__item social-media__item--menu">
+              <a class="social-media__link social-media__link--menu" href="#">Youtube</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -588,5 +643,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
