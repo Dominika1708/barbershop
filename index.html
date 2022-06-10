@@ -74,18 +74,26 @@
           <nav>
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="navigation__link menu__link" href="#about-us">O nas</a>
+                <a class="navigation__link menu__link" href="#about-us"
+                  >O nas</a
+                >
               </li>
               <li class="menu__item">
-                <a class="navigation__link menu__link" href="#services-and-prices"
+                <a
+                  class="navigation__link menu__link"
+                  href="#services-and-prices"
                   >Usługi i ceny</a
                 >
               </li>
               <li class="menu__item">
-                <a class="navigation__link menu__link" href="#barbers">Barberzy</a>
+                <a class="navigation__link menu__link" href="#barbers"
+                  >Barberzy</a
+                >
               </li>
               <li class="menu__item">
-                <a class="navigation__link menu__link" href="#contact">Kontakt</a>
+                <a class="navigation__link menu__link" href="#contact"
+                  >Kontakt</a
+                >
               </li>
             </ul>
           </nav>
@@ -109,10 +117,14 @@
 
           <ul class="social-media__list social-media__list--menu">
             <li class="social-media__item social-media__item--menu">
-              <a class="social-media__link social-media__link--menu" href="#">Instagram</a>
+              <a class="social-media__link social-media__link--menu" href="#"
+                >Instagram</a
+              >
             </li>
             <li class="social-media__item social-media__item--menu">
-              <a class="social-media__link social-media__link--menu" href="#">Youtube</a>
+              <a class="social-media__link social-media__link--menu" href="#"
+                >Youtube</a
+              >
             </li>
           </ul>
         </div>
@@ -155,30 +167,50 @@
           <div>
             <ul class="about-us__list">
               <li class="about-us__item">
-                <img
-                  src="./images/img 1.jpg"
-                  alt="barber applying foam on neck"
-                  width="270"
-                  height="445"
-                />
+                <picture>
+                  <source 
+                  srcset="./images/about-us/img1tablet-330.jpg 330w,
+                  ./images/about-us/img1tablet-660.jpg 660w"
+                  media="(min-width: 768px) and (max-width: 1199.9px)"
+                  sizes="(min-width:330px) 330px, 100vw" />
+                  <source srcset="./images/about-us/img1desktop-270.jpg 270w,
+                  ./images/about-us/img1desktop-540.jpg 540w"
+                  media="(min-width: 1200px)"
+                  sizes="(min-width:270px) 270px, 100vw" />
+
+                  <img
+                    src="./images/about-us/img1tablet-330.jpg"
+                    alt="barber applying foam on neck"
+                  />
+                </picture>
               </li>
               <li class="about-us__item">
-                <img
-                  src="./images/img 2.jpg"
-                  alt="barber shaving the back of the head"
-                  width="270"
-                  height="445"
-                />
+                <picture>
+                  <source 
+                  srcset="./images/about-us/img2tablet-330.jpg 330w,
+                  ./images/about-us/img2tablet-660.jpg 660w"
+                  media="(min-width: 768px) and (max-width: 1199.9px)"
+                  sizes="(min-width:330px) 330px, 100vw" />
+                  <source srcset="./images/about-us/img2desktop-270.jpg 270w,
+                  ./images/about-us/img2desktop-540.jpg 540w"
+                  media="(min-width: 1200px)"
+                  sizes="(min-width:270px) 270px, 100vw" />
+
+                  <img
+                    src="./images/about-us/img2tablet-330.jpg"
+                    alt="barber shaving the back of the head"
+                  />
+                </picture>
               </li>
             </ul>
           </div>
 
           <div class="about-us__box">
             <p class="subtitle subtitle--nobackground">O NAS</p>
-            <h2 class="secondary-title secondary-title--nobackground">
+            <h2 class="secondary-title secondary-title--nobackground about-us__secondary-title">
               Najlepszy Barbershop w Twoim mieście
             </h2>
-            <p class="description description--nobackgroud">
+            <p class="description description--nobackgroud about-us__description">
               Jeśli chcesz dodać pewności do swojego stylu i wyglądu – jesteś w
               dobrym miejscu.
             </p>
