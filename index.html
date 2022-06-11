@@ -585,19 +585,136 @@
           </p>
           <ul class="gallery">
             <li class="gallery__item">
-              <img src="./images/galleryimg1.jpg" alt="barber cutting hair" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/img1-mobile-418.jpg 418w,
+                    ./images/gallery/img1-mobile-836.jpg 836w
+                  "
+                  media="(max-width: 767.9px)"
+                  sizes="(min-width: 418px) 418px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img1-tablet-330.jpg 330w,
+                    ./images/gallery/img1-tablet-660.jpg 660w
+                  "
+                  media="(min-width: 768px) and (max-width: 1199.9px)"
+                  sizes="(min-width:330px) 330px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img1-desktop-270.jpg 270w,
+                    ./images/gallery/img1-desktop-540.jpg 540w
+                  "
+                  media="(min-width:1200px)"
+                  sizes="(min-width:270px) 270px, 100vw"
+                />
+
+                <img
+                  src="./images/gallery/img1-mobile-418.jpg"
+                  alt="barber cutting hair"
+                />
+              </picture>
             </li>
             <li class="gallery__item">
-              <img src="./images/galleryimg2.jpg" alt="barber shaving beard" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/img2-mobile-418.jpg 418w,
+                    ./images/gallery/img2-mobile-836.jpg 836w
+                  "
+                  media="(max-width: 767.9px)"
+                  sizes="(min-width: 418px) 418px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img2-tablet-330.jpg 330w,
+                    ./images/gallery/img2-tablet-660.jpg 660w
+                  "
+                  media="(min-width: 768px) and (max-width: 1199.9px)"
+                  sizes="(min-width:330px) 330px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img2-desktop-270.jpg 270w,
+                    ./images/gallery/img2-desktop-540.jpg 540w
+                  "
+                  media="(min-width:1200px)"
+                  sizes="(min-width:270px) 270px, 100vw"
+                />
+
+                <img
+                  src="./images/gallery/img2-mobile-418.jpg"
+                  alt="barber shaving beard"
+                />
+              </picture>
             </li>
             <li class="gallery__item">
-              <img
-                src="./images/galleryimg3.jpg"
-                alt="barber applying a towel on the face of a client"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/img3-mobile-418.jpg 418w,
+                    ./images/gallery/img3-mobile-836.jpg 836w
+                  "
+                  media="(max-width: 767.9px)"
+                  sizes="(min-width: 418px) 418px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img3-tablet-330.jpg 330w,
+                    ./images/gallery/img3-tablet-660.jpg 660w
+                  "
+                  media="(min-width: 768px) and (max-width: 1199.9px)"
+                  sizes="(min-width:330px) 330px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img3-desktop-270.jpg 270w,
+                    ./images/gallery/img3-desktop-540.jpg 540w
+                  "
+                  media="(min-width:1200px)"
+                  sizes="(min-width:270px) 270px, 100vw"
+                />
+
+                <img
+                  src="./images/gallery/img3-mobile-418.jpg"
+                  alt="barber applying a towel on the face of a client"
+                />
+              </picture>
             </li>
             <li class="gallery__item">
-              <img src="./images/galleryimg4.jpg" alt="barber shaving neck" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/img4-mobile-418.jpg 418w,
+                    ./images/gallery/img4-mobile-836.jpg 836w
+                  "
+                  media="(max-width: 767.9px)"
+                  sizes="(min-width: 418px) 418px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img4-tablet-330.jpg 330w,
+                    ./images/gallery/img4-tablet-660.jpg 660w
+                  "
+                  media="(min-width: 768px) and (max-width: 1199.9px)"
+                  sizes="(min-width:330px) 330px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img4-desktop-270.jpg 270w,
+                    ./images/gallery/img4-desktop-540.jpg 540w
+                  "
+                  media="(min-width:1200px)"
+                  sizes="(min-width:270px) 270px, 100vw"
+                />
+
+                <img
+                  src="./images/gallery/img4-mobile-418.jpg"
+                  alt="barber shaving neck"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -689,8 +806,9 @@
     <footer class="footer">
       <p class="footer__text">
         <svg class="footer__icon" width="12" height="12">
-          <use href="./images/icons.svg#icon-copyright"></use></svg
-        >Copyright 2020
+          <use href="./images/icons.svg#icon-copyright"></use>
+        </svg>
+        Copyright 2020
       </p>
       <ul class="social-media__list">
         <li class="social-media__item">

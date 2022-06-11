@@ -957,9 +957,22 @@ img {
   gap: 30px;
 }
 
+.gallery__item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+@media screen and (max-width: 1199.9px) {
+  .gallery__item {
+    display: flex;
+  }
+  .gallery__item:nth-child(odd) {
+    justify-content: flex-end;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .gallery {
-    flex-direction: row;
+    flex-wrap: nowrap;
   }
 }
 
@@ -969,6 +982,7 @@ img {
 
 .contact .container {
   display: flex;
+  flex-direction: column;
   margin: 0 auto;
   align-items: baseline;
 }
