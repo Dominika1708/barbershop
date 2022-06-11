@@ -1,5 +1,11 @@
 .gallery {
   display: flex;
-  justify-content: space-between;
   margin-top: 44px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  
+  @media screen and (min-width:1200px) {
+    flex-direction: row;
+  }
 }

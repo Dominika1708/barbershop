@@ -168,15 +168,22 @@
             <ul class="about-us__list">
               <li class="about-us__item">
                 <picture>
-                  <source 
-                  srcset="./images/about-us/img1tablet-330.jpg 330w,
-                  ./images/about-us/img1tablet-660.jpg 660w"
-                  media="(min-width: 768px) and (max-width: 1199.9px)"
-                  sizes="(min-width:330px) 330px, 100vw" />
-                  <source srcset="./images/about-us/img1desktop-270.jpg 270w,
-                  ./images/about-us/img1desktop-540.jpg 540w"
-                  media="(min-width: 1200px)"
-                  sizes="(min-width:270px) 270px, 100vw" />
+                  <source
+                    srcset="
+                      ./images/about-us/img1tablet-330.jpg 330w,
+                      ./images/about-us/img1tablet-660.jpg 660w
+                    "
+                    media="(min-width: 768px) and (max-width: 1199.9px)"
+                    sizes="(min-width:330px) 330px, 100vw"
+                  />
+                  <source
+                    srcset="
+                      ./images/about-us/img1desktop-270.jpg 270w,
+                      ./images/about-us/img1desktop-540.jpg 540w
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="(min-width:270px) 270px, 100vw"
+                  />
 
                   <img
                     src="./images/about-us/img1tablet-330.jpg"
@@ -186,15 +193,22 @@
               </li>
               <li class="about-us__item">
                 <picture>
-                  <source 
-                  srcset="./images/about-us/img2tablet-330.jpg 330w,
-                  ./images/about-us/img2tablet-660.jpg 660w"
-                  media="(min-width: 768px) and (max-width: 1199.9px)"
-                  sizes="(min-width:330px) 330px, 100vw" />
-                  <source srcset="./images/about-us/img2desktop-270.jpg 270w,
-                  ./images/about-us/img2desktop-540.jpg 540w"
-                  media="(min-width: 1200px)"
-                  sizes="(min-width:270px) 270px, 100vw" />
+                  <source
+                    srcset="
+                      ./images/about-us/img2tablet-330.jpg 330w,
+                      ./images/about-us/img2tablet-660.jpg 660w
+                    "
+                    media="(min-width: 768px) and (max-width: 1199.9px)"
+                    sizes="(min-width:330px) 330px, 100vw"
+                  />
+                  <source
+                    srcset="
+                      ./images/about-us/img2desktop-270.jpg 270w,
+                      ./images/about-us/img2desktop-540.jpg 540w
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="(min-width:270px) 270px, 100vw"
+                  />
 
                   <img
                     src="./images/about-us/img2tablet-330.jpg"
@@ -207,10 +221,14 @@
 
           <div class="about-us__box">
             <p class="subtitle subtitle--nobackground">O NAS</p>
-            <h2 class="secondary-title secondary-title--nobackground about-us__secondary-title">
+            <h2
+              class="secondary-title secondary-title--nobackground about-us__secondary-title"
+            >
               Najlepszy Barbershop w Twoim mieście
             </h2>
-            <p class="description description--nobackgroud about-us__description">
+            <p
+              class="description description--nobackgroud about-us__description"
+            >
               Jeśli chcesz dodać pewności do swojego stylu i wyglądu – jesteś w
               dobrym miejscu.
             </p>
@@ -350,15 +368,47 @@
 
       <section class="barbers section" id="barbers">
         <div class="container">
-          <p class="subtitle subtitle--nobackground">
-            Dla prawdziwych mężczyzn
-          </p>
-          <h2 class="secondary-title secondary-title--nobackground">
-            Nasi barberzy
-          </h2>
+          <div class="barbers__wrap">
+            <p class="subtitle subtitle--nobackground">
+              Dla prawdziwych mężczyzn
+            </p>
+            <h2 class="secondary-title secondary-title--nobackground">
+              Nasi barberzy
+            </h2>
+          </div>
           <ul class="barbers__list">
             <li class="barbers__card">
-              <img src="./images/john smith.jpg" alt="John Smith picture" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/barbers/johnsmith-mobile-418.jpg 418w,
+                    ./images/barbers/johnsmith-mobile-836.jpg 836w
+                  "
+                  media="(max-width:767.9px)"
+                  sizes="(min-width: 418px) 418px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/barbers/johnsmith-tablet-450.jpg 450w,
+                    ./images/barbers/johnsmith-tablet-900.jpg 900w
+                  "
+                  media="(min-width:768px) and (max-width:1199.9px)"
+                  sizes="(min-width: 450px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/barbers/johnsmith-desktop-370.jpg 370w,
+                    ./images/barbers/johnsmith-desktop-740.jpg 740w
+                  "
+                  media="(min-width:1200px)"
+                  sizes="(min-width: 370px) 370px, 100vw"
+                />
+
+                <img
+                  src="./images/barbers/johnsmith-mobile-418.jpg"
+                  alt="John Smith picture"
+                />
+              </picture>
               <h3 class="barbers__name light-theme">John Smith</h3>
               <p class="barbers__job">Extreme Barber</p>
               <ul class="socials">
@@ -393,7 +443,37 @@
               </ul>
             </li>
             <li class="barbers__card">
-              <img src="./images/michele doe.jpg" alt="Michele Doe picture" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/barbers/micheledoe-mobile-418.jpg 418w,
+                    ./images/barbers/micheledoe-mobile-836.jpg 836w
+                  "
+                  media="(max-width:767.9px)"
+                  sizes="(min-width: 418px) 418px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/barbers/micheledoe-tablet-450.jpg 450w,
+                    ./images/barbers/micheledoe-tablet-900.jpg 900w
+                  "
+                  media="(min-width:768px) and (max-width:1199.9px)"
+                  sizes="(min-width: 450px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/barbers/micheledoe-desktop-370.jpg 370w,
+                    ./images/barbers/micheledoe-desktop-740.jpg 740w
+                  "
+                  media="(min-width:1200px)"
+                  sizes="(min-width: 370px) 370px, 100vw"
+                />
+
+                <img
+                  src="./images/barbers/micheledoe-mobile-418.jpg"
+                  alt="Michele Doe picture"
+                />
+              </picture>
               <h3 class="barbers__name light-theme">Michele Doe</h3>
               <p class="barbers__job">Extreme Barber</p>
               <ul class="socials">
@@ -428,7 +508,37 @@
               </ul>
             </li>
             <li class="barbers__card">
-              <img src="./images/alan black.jpg" alt="Alan Black picture" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/barbers/alanblack-mobile-418.jpg 418w,
+                    ./images/barbers/alanblack-mobile-836.jpg 836w
+                  "
+                  media="(max-width:767.9px)"
+                  sizes="(min-width: 418px) 418px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/barbers/alanblack-tablet-450.jpg 450w,
+                    ./images/barbers/alanblack-tablet-900.jpg 900w
+                  "
+                  media="(min-width:768px) and (max-width:1199.9px)"
+                  sizes="(min-width: 450px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/barbers/alanblack-desktop-370.jpg 370w,
+                    ./images/barbers/alanblack-desktop-740.jpg 740w
+                  "
+                  media="(min-width:1200px)"
+                  sizes="(min-width: 370px) 370px, 100vw"
+                />
+
+                <img
+                  src="./images/barbers/alanblack-mobile-418.jpg"
+                  alt="Alan Black picture"
+                />
+              </picture>
               <h3 class="barbers__name light-theme">Alan Black</h3>
               <p class="barbers__job">Extreme Barber</p>
               <ul class="socials">
