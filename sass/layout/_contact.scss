@@ -1,11 +1,10 @@
 .contact {
   background-color: getBG(primary);
+  position: relative;
 
   & .container {
     display: flex;
-    flex-direction: column;
     margin: 0 auto;
-    align-items: baseline;
   }
 
   &__title {
@@ -18,7 +17,7 @@
   }
 
   &__form {
-    margin: 44px 40px 0 0;
+    margin-top: 44px;
   }
 
   &__box {
@@ -80,20 +79,28 @@
   &__subtitle {
     color: getColor(clear);
   }
+
+  &__reservation {
+    padding: 130px 40px 130px 0;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
 }
 
-.address,
-.contact__reservation {
-  flex-grow: 1;
-  padding: 130px 0;
-}
 
 .address {
-  padding-left: 100px;
-  padding-right: 105px;
+  padding: 130px 105px 130px 100px;
+  position: absolute;
   background-image: url(../images/contact-bg.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; 
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  
 
   &__wrap {
     font-family: var(--main-font);
