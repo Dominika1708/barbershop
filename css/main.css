@@ -83,6 +83,8 @@ img {
 }
 
 .button {
+  display: block;
+  text-decoration: none;
   width: 164px;
   font-weight: 600;
   font-size: 12px;
@@ -1150,6 +1152,19 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+  .address .container {
+    flex-direction: row;
+    align-items: center;
+  }
+  .address__box {
+    flex-grow: 1;
+  }
+  .address__wrap {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .contact {
     position: relative;
@@ -1237,13 +1252,30 @@ img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) rotate(0deg);
-  width: 528px;
+  max-width: 528px;
+  min-width: 360px;
   min-height: 581px;
+  z-index: 11;
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 700ms ease-in;
   padding: 40px;
+}
+
+.page {
+  background-color: #191C26;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px 0;
+}
+
+.page .modal {
+  background-color: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px;
+  margin: 0 20px;
 }
 
 .modal__icon {
@@ -1253,8 +1285,8 @@ img {
 .modal__button {
   display: flex;
   padding: 6px;
-  background-color: transparent;
-  border: 1px solid #FF6C00;
+  background-color: #FFFFFF;
+  border: 2px solid #FF6C00;
   border-radius: 50%;
   position: absolute;
   right: 8px;

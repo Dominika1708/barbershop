@@ -22,8 +22,10 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) rotate(0deg);
-    width: 528px;
+    max-width: 528px;
+    min-width: 360px;
     min-height: 581px;
+    z-index: 11;
     background-color: getColor(clear);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -32,6 +34,23 @@
     padding: 40px;
   }
 }
+
+.page {
+  background-color: getBG(primary);
+  width: 100vw;
+  height: 100vh;
+  padding: 20px 0;
+
+  & .modal {
+    background-color: getColor(clear);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px;
+    margin: 0 20px;
+  }
+}
+
 .modal {
   &__icon {
     fill: currentColor;
@@ -40,8 +59,8 @@
   &__button {
     display: flex;
     padding: 6px;
-    background-color: transparent;
-    border: 1px solid getColor(accent);
+    background-color: getColor(clear);
+    border: 2px solid getColor(accent);
     border-radius: 50%;
     position: absolute;
     right: 8px;
