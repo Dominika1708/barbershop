@@ -722,87 +722,86 @@
 
       <!-- CONTACT -->
 
-      <section class="contact" id="contact">
-        <div class="container">
-          <div class="contact__reservation">
-            
-              <h3 class="contact__title">Rezerwacja online</h3>
+      <div class="contact" id="contact">
+        <section class="contact__reservation section">
+          <div class="container">
+            <h3 class="contact__title">Rezerwacja online</h3>
 
-              <form class="contact__form" name="reservation-form">
-                <div class="contact__box">
-                  <label class="contact__label contact__label--input">
-                    Imie*
-                    <input
-                      class="contact__write contact__write--input"
-                      type="text"
-                      name="name"
-                      required
-                    />
-                  </label>
-                  <label class="contact__label contact__label--input">
-                    Telefon
-                    <input
-                      class="contact__write contact__write--input"
-                      type="tel"
-                      name="telephone"
-                    />
-                  </label>
-                </div>
-                <label class="contact__label contact__label--text">
-                  Wiadomość
-                  <textarea
-                    class="contact__write contact__write--text"
-                    name="comments"
-                    rows="4"
-                  >
-                  </textarea>
+            <form class="contact__form" name="reservation-form">
+              <div class="contact__box">
+                <label class="contact__label contact__label--input">
+                  Imie*
+                  <input
+                    class="contact__write contact__write--input"
+                    type="text"
+                    name="name"
+                    required
+                  />
                 </label>
-                <button class="button button--onbackground" type="submit">
-                  Wysłać
-                </button>
-              </form>
-            
+                <label class="contact__label contact__label--input">
+                  Telefon
+                  <input
+                    class="contact__write contact__write--input"
+                    type="tel"
+                    name="telephone"
+                  />
+                </label>
+              </div>
+              <label class="contact__label contact__label--text">
+                Wiadomość
+                <textarea
+                  class="contact__write contact__write--text"
+                  name="comments"
+                  rows="4"
+                >
+                </textarea>
+              </label>
+              <button class="button button--onbackground" type="submit">
+                Wysłać
+              </button>
+            </form>
           </div>
+        </section>
 
-          <div class="address">
-            
-              <h2 class="contact__title">Kontakt</h2>
-              <address class="address__wrap">
-                <ul>
-                  <li class="address__item">
-                    <a
-                      class="address__link address__link--street"
-                      href="https://goo.gl/maps/ZC3xwpZe529HttPX7"
-                      target="_blank"
-                      >ul. Prosta 20 Warszawa, 00-001</a
-                    >
-                  </li>
-                  <li class="address__item">
-                    <a
-                      class="address__link address__link--phone"
-                      href="tel:+48111111111"
-                      >+48 111 111 111</a
-                    >
-                  </li>
-                  <li class="address__item">
-                    <a class="address__mail" href="mailto:barbershop@email.com"
-                      >barbershop@email.com</a
-                    >
-                  </li>
-                </ul>
-              </address>
-            
-
-            <h3 class="subtitle subtitle--onbackground contact__subtitle">
-              Godziny otwarcia
-            </h3>
-            <p class="address__time">
-              Codziennie od <time datetime="T9:00">9:00</time> do
-              <time datetime="T22:00">22:00</time>
-            </p>
+        <section class="address section">
+          <div class="container">
+            <h2 class="contact__title">Kontakt</h2>
+            <address class="address__wrap">
+              <ul>
+                <li class="address__item">
+                  <a
+                    class="address__link address__link--street"
+                    href="https://goo.gl/maps/ZC3xwpZe529HttPX7"
+                    target="_blank"
+                    >ul. Prosta 20 Warszawa, 00-001</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a
+                    class="address__link address__link--phone"
+                    href="tel:+48111111111"
+                    >+48 111 111 111</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a class="address__mail" href="mailto:barbershop@email.com"
+                    >barbershop@email.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <div class="address__box">
+              <h3 class="subtitle subtitle--onbackground contact__subtitle">
+                Godziny otwarcia
+              </h3>
+              <p class="address__time">
+                Codziennie od <time datetime="T9:00">9:00</time> do
+                <time datetime="T22:00">22:00</time>
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
 
     <!-- END MAIN -->

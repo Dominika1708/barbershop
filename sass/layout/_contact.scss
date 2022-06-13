@@ -1,10 +1,10 @@
 .contact {
   background-color: getBG(primary);
-  
 
   & .container {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
   }
 
   &__title {
@@ -18,6 +18,7 @@
 
   &__form {
     margin-top: 44px;
+    width: 100%;
   }
 
   &__box {
@@ -44,7 +45,10 @@
     }
 
     &--input:first-of-type {
-      margin-right: 30px;
+      @media screen and (min-width:481px) {
+        margin-right: 30px;
+      }
+      
     }
 
     &--input {
@@ -81,7 +85,6 @@
   }
 
   &__reservation {
-    padding: 84px 0;
     display: flex;
     flex-direction: column;
   }
@@ -90,11 +93,9 @@
 
 
 .address {
-  padding: 130px 105px 130px 100px;
   background-image: url(../images/contact-bg.png);
   background-repeat: no-repeat;
   background-size: cover; 
-
 
   &__wrap {
     font-family: var(--main-font);
@@ -156,17 +157,46 @@
   }
 }
 
+@media screen and (max-width: 480.9px) {
+  .contact {
+    &__title {
+      text-align: center;
+    }
+
+    &__box {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    &__form {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__label {
+      width: 100%;
+    }
+  }
+}
+
 @media screen and (min-width:1200px) {
   .contact {
     position: relative;
 
-    & .container {
-      flex-direction: row;
-    }
-
     &__reservation {
-      padding: 130px 40px 193px 0;
+      padding: 130px 10px 193px 0;
       width: 580px;
+      position: relative;
+      top: 0;
+      left: 50%;
+      transform: translateX(-104%);
+
+      & .container {
+        padding-right: 0;
+        margin: 0 0 0 auto;
+        width: 100%;
+      }
     }
   }
 
@@ -177,5 +207,9 @@
     bottom: 0;
     left: 50%;
     right: 0;
+
+    & .container {
+      padding-left: 0;
+    }
   }
 }
