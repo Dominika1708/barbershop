@@ -90,9 +90,6 @@
 }
 
 .address {
-  background-image: url(../images/contact-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 
   &__wrap {
     font-family: var(--main-font);
@@ -231,6 +228,43 @@
 
     & .container {
       padding-left: 0;
+    }
+  }
+}
+
+//===== BACKGROUND IMAGES =====//
+
+.address {
+  background-image: url(../images/contact/contact-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/contact/contact-mobile@2x.png);
+  }
+
+  @media screen and (min-width:481px) {
+    background-image: url(../images/contact/contact-tablet.png);
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/contact/contact-tablet@2x.png);
+    }
+  }
+
+  @media screen and (min-width:1200px) {
+    background-image: url(../images/contact/contact-desktop.png);
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/contact/contact-desktop@2x.png);
     }
   }
 }
