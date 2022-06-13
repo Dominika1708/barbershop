@@ -980,12 +980,11 @@ img {
 
 .contact {
   background-color: #191C26;
-  position: relative;
 }
 
 .contact .container {
   display: flex;
-  margin: 0 auto;
+  flex-direction: column;
 }
 
 .contact__title {
@@ -1061,22 +1060,16 @@ img {
 }
 
 .contact__reservation {
-  padding: 130px 40px 193px 0;
+  padding: 84px 0;
   display: flex;
   flex-direction: column;
-  width: 580px;
 }
 
 .address {
   padding: 130px 105px 130px 100px;
-  position: absolute;
   background-image: url(../images/contact-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  right: 0;
 }
 
 .address__wrap {
@@ -1136,13 +1129,43 @@ img {
   margin-top: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .contact {
+    position: relative;
+  }
+  .contact .container {
+    flex-direction: row;
+  }
+  .contact__reservation {
+    padding: 130px 40px 193px 0;
+    width: 580px;
+  }
+  .address {
+    padding: 130px 105px 130px 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+  }
+}
+
 .footer {
   padding: 56px 0;
 }
 
 .footer .container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column-reverse;
+  justify-content: center;
+  gap: 29px;
+}
+
+@media screen and (min-width: 494px) {
+  .footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .footer__text {
@@ -1283,6 +1306,7 @@ img {
   background-color: #090B13DD;
   top: 0;
   right: 0;
+  z-index: 9;
   transform: translateX(0);
   transition: transform 500ms linear;
 }

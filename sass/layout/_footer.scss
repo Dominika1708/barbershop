@@ -3,7 +3,15 @@
 
   & .container {
     display: flex;
-    justify-content: space-between; 
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 29px;
+
+    @media screen and (min-width:494px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+     
   }
 
   &__text {

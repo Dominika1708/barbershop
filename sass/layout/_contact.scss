@@ -1,10 +1,10 @@
 .contact {
   background-color: getBG(primary);
-  position: relative;
+  
 
   & .container {
     display: flex;
-    margin: 0 auto;
+    flex-direction: column;
   }
 
   &__title {
@@ -81,10 +81,9 @@
   }
 
   &__reservation {
-    padding: 130px 40px 193px 0;
+    padding: 84px 0;
     display: flex;
     flex-direction: column;
-    width: 580px;
   }
 
 }
@@ -92,15 +91,10 @@
 
 .address {
   padding: 130px 105px 130px 100px;
-  position: absolute;
   background-image: url(../images/contact-bg.png);
   background-repeat: no-repeat;
   background-size: cover; 
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  right: 0;
-  
+
 
   &__wrap {
     font-family: var(--main-font);
@@ -159,5 +153,29 @@
 
   &__time {
     margin-top: 20px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .contact {
+    position: relative;
+
+    & .container {
+      flex-direction: row;
+    }
+
+    &__reservation {
+      padding: 130px 40px 193px 0;
+      width: 580px;
+    }
+  }
+
+  .address {
+    padding: 130px 105px 130px 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 0;
   }
 }
